@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*~
+
+# Local-only adaptations of these templates kept under a private notes folder
+private/
+local/

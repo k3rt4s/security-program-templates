@@ -1,0 +1,130 @@
+# Quarterly board security update
+
+A working template for the quarterly security update that goes to a board or board committee (often Audit, sometimes Risk, occasionally a standing Technology committee). Designed for a director-level audience that has 15 to 30 minutes and wants to leave the meeting with three things: an honest read on the program, a short list of decisions you need from them, and confidence that the operator is not surprised by what is in the data.
+
+## Length and structure
+
+Aim for an 8 to 12 page deck plus a 1-page executive summary. Anything longer competes for attention you do not have; anything shorter looks underbaked for a quarterly cadence. The order below puts the items that change every quarter at the front and the items that change rarely at the back.
+
+## Section 1: Executive summary (one page)
+
+A single page. Three short paragraphs.
+
+- **Posture.** One sentence on whether the overall risk posture is improving, holding, or declining, and why.
+- **Top three risks right now.** Bullet list, one line each, with movement indicator (new, increased, decreased, holding). These are tied to specific rows in the risk register.
+- **What we need from the board this quarter.** Bullet list of explicit asks: decisions, funding, policy approvals, escalations. Three at most. If there are none, say so explicitly; do not pad.
+
+The executive summary is the page that gets forwarded. Write it last, after the rest of the deck is settled.
+
+## Section 2: Key risk and performance indicators
+
+A small dashboard, no more than 6 to 10 indicators, mixing leading and lagging measures. Avoid vanity metrics ("number of emails scanned"). Each indicator has:
+
+- A definition that fits on one line.
+- A current value and the value from the prior two quarters, so trend is visible.
+- A target or threshold, and a color (green / yellow / red) tied to that threshold, not to gut feel.
+- An owner.
+
+Examples of indicators that survive board scrutiny:
+
+| Indicator                      | Definition                                                               | Type    |
+| ------------------------------ | ------------------------------------------------------------------------ | ------- |
+| Critical patch latency         | Days from vendor release to 95% deployment for severity-critical patches | Lagging |
+| Phishing simulation click rate | Percent of simulated phishing emails clicked, by population              | Leading |
+| MFA coverage                   | Percent of in-scope identities with phishing-resistant MFA               | Leading |
+| Mean time to detect (MTTD)     | Median time from initial event to SOC alert, security incidents only     | Lagging |
+| Third-party risk-review SLA    | Percent of in-scope vendors reviewed within their cadence                | Leading |
+| Crown-jewel control coverage   | Percent of named-asset controls passing most recent test                 | Leading |
+
+Indicators that look like security work but rarely belong on a board deck: number of vulnerabilities, number of blocked emails, number of EDR alerts. Volume is not signal.
+
+## Section 3: Significant incidents and near misses
+
+For each material incident or near miss in the quarter, one slide or one half-page. No client names, no individual names, no system identifiers that would compromise an open investigation.
+
+- **What happened, in one paragraph.** Plain language.
+- **Customer / regulatory / financial impact.** Quantified where possible.
+- **Detection path.** How did we find it. This is often more diagnostic of program health than the incident itself.
+- **Containment timeline.** Time to detect, time to contain, time to communicate.
+- **Action items and dates.** Tied to remediation backlog with owners.
+
+If there are no material incidents, say so in one sentence and move on. Do not invent narrative.
+
+## Section 4: Program updates
+
+One slide per program area in scope, no more than 4 to 6 areas total. Suggested areas:
+
+- Identity and access
+- Vulnerability and patch management
+- Third-party / vendor risk
+- Detection and response
+- Data protection (including AI / model governance, if relevant)
+- Resilience (BCP / DR)
+
+Each slide:
+
+- Status against the published quarterly objectives (green / yellow / red, with reason).
+- Notable shipped or delivered work this quarter.
+- Notable in-flight work for next quarter.
+- Open blockers, if any.
+
+A board does not want a tour of every project. Show the shape, name the headwinds, move on.
+
+## Section 5: Compliance and audit posture
+
+A short status of regulatory and audit obligations:
+
+- Open audit findings and aging.
+- Compliance certifications status (in-scope frameworks, renewal dates).
+- Regulatory engagements active this quarter.
+- Material policy or framework changes since last meeting.
+
+Tie back to the risk register where applicable; do not list the same item twice in different sections.
+
+## Section 6: Strategic initiatives and roadmap
+
+The longer-horizon view. One slide.
+
+- Next 12 months on the security roadmap, framed by business outcome (not project name).
+- Funding posture for the year against plan.
+- Hiring posture against plan.
+
+Strategic initiatives are the place to surface multi-quarter bets that need board awareness and continued support. Resist using this slide for a project list.
+
+## Section 7: Forward look
+
+The next 6 to 12 months. One slide.
+
+- Emerging risks the program is watching, with rationale.
+- External events on the horizon that may force program changes (regulation, M&A, major releases, geopolitical).
+- Decisions or asks that will come to the board in the next two meetings, so the board can prepare.
+
+## Section 8: Asks
+
+Restate the asks from the executive summary, with the context needed to decide. Each ask:
+
+- The decision needed, framed as a yes / no or A / B / C.
+- The recommendation, with rationale.
+- The cost of doing nothing.
+- What changes if the decision waits a quarter.
+
+If a board ends a meeting without any decisions being asked of them, they often feel they were given a status update rather than engaged in governance. Three good asks per quarter, with real options, is a healthy cadence.
+
+## Backup material
+
+Carry as appendices, not as part of the main flow:
+
+- Detailed risk register extract (top 20 rows).
+- Detailed incident chronology.
+- Threat intelligence brief, sanitized.
+- Glossary of terms used in the deck.
+
+Reference the appendix when a director asks for detail. Do not lead with it.
+
+## Common failure modes
+
+1. **Volume over signal.** Pages of metrics that no director knows how to interpret. Pick a small set and explain each one.
+2. **No asks.** A polished status report with no decisions requested teaches the board that security is a reporting function rather than a governance function.
+3. **Surprise incidents.** A material incident appears for the first time on the board deck. Brief committee chairs by phone the week the incident closes; the board meeting is not a discovery channel.
+4. **Color-without-criteria.** A red indicator with no threshold definition is a feeling, not a signal. Tie every color to a published threshold.
+5. **Reused decks.** The same slides quarter over quarter with minor updates train directors to skim. Refresh the structure annually, even if the underlying program is stable.
