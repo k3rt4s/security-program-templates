@@ -12,8 +12,6 @@ Markdown only. No code. Each document is opinionated about the things that most 
 - [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks (NIST 800-53, ISO/IEC 27001, SOC 2, CIS Controls) with honest coverage qualifiers that survive audit scrutiny.
 - [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems, structured to separate root-cause analysis from accountability and to feed action items into the regular engineering backlog.
 - [risk-management/](risk-management/README.md): Patterns for an enterprise risk register, covering risk statement format, a 5-point likelihood and impact rubric anchored to time and money, treatment options, and the bar for an Accept decision.
-- [.gitignore](.gitignore): Git ignore rules for this directory's repo.
-- [LICENSE](LICENSE)
 
 <!-- END CONTENTS -->
 
