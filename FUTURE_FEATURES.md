@@ -15,7 +15,7 @@ A document belongs here only if it clears all four of these. Most candidate topi
 
 ## Candidates
 
-One candidate remains.
+Topics that have cleared the bar above and are waiting to be written.
 
 ### Security metrics catalog
 
