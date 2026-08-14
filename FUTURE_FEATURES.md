@@ -2,7 +2,7 @@
 
 Candidate documents for this repository, with the reason each is a candidate and the bar it would have to clear to be written.
 
-The set currently ships seven templates. This file exists so that candidates are recorded with their reasoning rather than rediscovered, and so that the ones deliberately not written stay deliberately not written.
+This file exists so that candidates are recorded with their reasoning rather than rediscovered, and so that the ones deliberately not written stay deliberately not written. It does not restate what currently ships; the [Contents](README.md#contents) manifest does that and is kept current by script.
 
 ## The bar
 
