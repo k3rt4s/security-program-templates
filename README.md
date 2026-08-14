@@ -61,6 +61,8 @@ The thread that runs through the templates:
 | `TP-041` | Vendor tiering | An observability vendor at four figures a month holding a write-scoped token into production. Tier 4, and roughly a hundredth the spend of the facilities contract sitting in Tier 1. |
 | `TTX-2026-02` | Tabletop after-action | The exercise that postmortem action item AI-03 called for, run as a third-party compromise scenario. Two of its three forced decisions stalled on authority nobody in the room held. |
 
+The [metrics catalog](metrics/security-metrics-catalog.md) has no row here on purpose. It is a reference the others draw from rather than an artifact an organization produces one instance of, so it has nothing to carry an Ambervale identifier.
+
 Ambervale is invented, as is every name, figure, and system in the examples. Any resemblance to a real organization is coincidental.
 
 ## How to use these
