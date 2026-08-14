@@ -1,6 +1,6 @@
 # security-program-templates
 
-Working templates and patterns for the documents a security program needs to actually run: a risk register that says something useful, a board update that earns time on the agenda, an incident postmortem that produces shipped changes, an AI system register that survives its second quarter, a vendor tiering model that puts the effort where the exposure is, and a control mapping that auditors trust.
+Working templates and patterns for the documents a security program needs to actually run: a risk register that says something useful, a board update that earns time on the agenda, an incident postmortem that produces shipped changes, an AI system register that survives its second quarter, a vendor tiering pattern that puts the effort where the exposure is, and a control mapping that auditors trust.
 
 Markdown only. No code. Each document is opinionated about the things that most organizations get wrong the first time they build one, and each ends with a short list of failure modes worth watching for.
 
@@ -66,7 +66,7 @@ One housekeeping note for anyone reading the source: the `CONTENTS` blocks in th
 
 These are templates and patterns. They are not policies, not standards, not control libraries, not legal advice, and not a security program in a box. They are the shape of the artifacts a security program produces, and the judgment lives in how they get filled in for a specific context.
 
-Their provenance differs, and it is worth being straight about which is which. The risk register, exception record, postmortem, board update, vendor tiering model, and control mapping are long-established artifacts, and what is opinionated about them is distilled from running them in real organizations and watching what works and what does not. The AI system register and the materiality determination record describe practices that are still forming: the disclosure obligation they answer to is recent, and almost nobody has a decade of watching an AI inventory succeed or fail. Those two are reasoned from current practice, current regulatory expectations, and the failure patterns visible so far, and they should be read as a considered starting position rather than as settled practice.
+Their provenance differs, and it is worth being straight about which is which. The risk register, exception record, postmortem, board update, vendor tiering pattern, and control mapping are long-established artifacts, and what is opinionated about them is distilled from running them in real organizations and watching what works and what does not. The AI system register and the materiality determination record describe practices that are still forming: the disclosure obligation they answer to is recent, and almost nobody has a decade of watching an AI inventory succeed or fail. Those two are reasoned from current practice, current regulatory expectations, and the failure patterns visible so far, and they should be read as a considered starting position rather than as settled practice.
 
 ## License
 

@@ -45,7 +45,7 @@ The last three rows are worth explaining, because they are unusual and each one 
 
 Aged exceptions is a direct read on whether the program is closing its known gaps or accumulating them, and it is the number that moves when remediation goes unfunded. Shutdown readiness answers the question a board will eventually ask about AI, which is not how the models are governed on paper but how fast the company could stop one, and it is answerable only from drills that were actually run. Vendor tier reductions is the one that will look strange at first and is the most honest of the three: it counts vendors whose access was narrowed, which is exposure actually removed, as opposed to the review-SLA row above it, which counts work performed. Showing an activity measure next to an effect measure for the same program area is a quiet way to teach a board the difference, and the pair is more persuasive than either alone.
 
-All three come from artifacts the program already maintains: the [exception register](../risk-management/security-exception-record.md), the [AI system register](../ai-governance/ai-system-register-pattern.md), and the [vendor tiering model](../third-party-risk/vendor-risk-tiering-pattern.md).
+All three come from artifacts the program already maintains: the [exception register](../risk-management/security-exception-record.md), the [AI system register](../ai-governance/ai-system-register-pattern.md), and the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md).
 
 ## Section 3: Significant incidents and near misses
 
