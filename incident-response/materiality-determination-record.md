@@ -4,6 +4,8 @@ A working pattern for the contemporaneous record of how an organization decided 
 
 This is a process template, not legal advice. Materiality is a legal determination made with counsel, and the conclusions in any real record belong to the disclosure decision-makers rather than to the security function. What this document describes is the artifact that captures the decision, which is the part security is usually asked to produce and usually has no format for.
 
+The worked detail is written against US securities disclosure, because that regime has the sharpest published expectations about documenting the process and because its two-clock structure is the part organizations most often get wrong. The structure is not specific to it. An organization outside that regime, or a private one, still needs a contemporaneous record of a significance judgment made under time pressure with incomplete facts, and every section below survives the substitution: replace the standard, the decision-makers, and the deadlines with the ones that bind you. Do that substitution explicitly rather than by analogy, because the thresholds and the identity of the decision-maker are exactly what changes.
+
 ## What this record is, and what it is not
 
 This is the internal memorandum documenting a materiality determination for a specific cybersecurity incident: the facts known and unknown at the time, the factors weighed, who participated, what was concluded, and when.
@@ -119,6 +121,18 @@ The instinct is to document only the incidents that get disclosed, on the theory
 
 Keep a determination index alongside the individual records, listing every incident that entered the process and its outcome. The index is the artifact that answers "how many of these have there been" without a discovery exercise.
 
+## Handling, retention, and privilege
+
+The record is a sensitive document about a sensitive event, and the template is incomplete without saying where it lives. Decide this before the first incident, not during one.
+
+**Storage.** Not in the incident-management tool, and not in a shared workspace whose access list is the security team plus everyone who was ever added to it. The record belongs in the location counsel designates, with an access list of named individuals rather than a group, and with the sources it cites reachable from it. Access is auditable, because "who read this and when" is a question that gets asked later.
+
+**Retention.** Set by the records retention schedule and by counsel, never by the default lifecycle of whatever tool it happens to sit in. The common and avoidable failure is a determination record stored somewhere with an automatic purge shorter than the period over which the determination could be questioned. Retain superseded versions for the same period as the final one; the point of versioning is defeated if the earlier versions age out.
+
+**Privilege.** Counsel decides the posture and the marking, and the security function's job is to avoid undermining it. Two practices do most of the work. Keep the facts ledger factual, with no speculation about liability, fault, or what a regulator will think, because a technical document salted with legal conclusions is both weaker evidence and a harder privilege argument. And route legal conclusions through counsel rather than drafting them and asking for review, which is a different thing and reads differently.
+
+**Legal hold.** When a hold attaches, the record and everything it cites is in scope, including the incident chat channels the timeline was reconstructed from. Say so in the incident-response procedure so the channels are preserved rather than auto-expired, which is the most common way a hold arrives too late to matter.
+
 ## Relationship to the other artifacts
 
 - The [postmortem](blameless-postmortem-template.md) is a separate document with a separate purpose. It may cite this record and must not replace it. Where an active [exception](../risk-management/security-exception-record.md) covered the access path, both documents say so.
@@ -135,3 +149,4 @@ Keep a determination index alongside the individual records, listing every incid
 6. **Quantitative only.** The memo compares a dollar figure to a threshold and stops. The qualitative factors are where a small incident becomes a material one.
 7. **No reassessment triggers.** The conclusion is stated without saying what would change it, so a later reversal reads as a changed story rather than as new facts.
 8. **One clock in view.** The process is built around the securities timeline while a contractual or sector obligation measured in hours expires unnoticed.
+9. **Sensitive record, default storage.** The memo lives in the incident tool or a broadly shared drive, under whatever retention that tool applies, and the superseded versions age out before anyone asks about them.

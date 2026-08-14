@@ -4,6 +4,8 @@ A working pattern for the record that documents a deliberate departure from poli
 
 Every security program accumulates gaps it has decided to live with. The difference between a mature program and an immature one is not the number of gaps, it is whether each one is written down, owned, bounded, and priced. This is the artifact that does that, and it is the operational other half of the Accept treatment on the [risk register](risk-register-pattern.md).
 
+Two words appear throughout and they are not interchangeable. The **record** is the per-decision document described below: one departure, one scope, one approver, one expiry. The **register** is the index of every record, and it is what everyone outside the security team actually consumes, because the questions that get asked are aggregate ones: how many are open, how many are past their second renewal, which ones sit at the executive tier, which expire this quarter. Design the record so the register is a query over the fields rather than a separately maintained summary. The register needs no template of its own; it needs the record's fields to be consistent enough to sort on.
+
 ## Exception versus risk acceptance
 
 These two terms get used interchangeably and they are not the same thing. The distinction is worth holding because it changes who approves.
