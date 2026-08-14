@@ -123,6 +123,8 @@ A row in the AI register is not a risk. The risk is written in the standard form
 
 Where an AI system is operating outside policy on purpose, with a deadline and a compensating control, that is an [exception](../risk-management/security-exception-record.md), not a register annotation.
 
+There is a fifth discovery channel that belongs to the vendor process rather than to this one. An existing supplier that adds an AI subprocessor has changed your data flow without you deploying anything, and the notice usually arrives as a data-processing amendment that no one reads. Treat it as a reassessment trigger in the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md) and as a registration event here, because the resulting row has an accountable owner inside your organization even though the system runs inside someone else's.
+
 ## Review cadence and minimum viable register
 
 Agentic systems review quarterly, advisory semi-annually, assistive annually or on material change. Any reclassification, any change to action scope, and any provider change to training or retention terms triggers an immediate review regardless of the calendar.

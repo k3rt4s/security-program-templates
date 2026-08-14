@@ -85,6 +85,7 @@ The register is the spine of the program and most of its rows point somewhere el
 - The top rows, with movement since last quarter, are section 1 of the [quarterly board update](../board-reporting/quarterly-security-update-template.md). Rows that never appear there are not being governed, they are being filed.
 - When a risk materializes, the [postmortem](../incident-response/blameless-postmortem-template.md) names the register row. A realized risk that was scored Unlikely is a calibration finding, and the honest move is to re-score the neighbors that share its reasoning rather than only the row that fired.
 - Risks about AI systems are written here in the standard form and cite the relevant row on the [AI system register](../ai-governance/ai-system-register-pattern.md). The AI register inventories; this register scores.
+- Third parties are tiered by exposure in the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md), and a specific vendor failure is a row here like any other. Concentration across the critical tier, several vendors sharing one region or one identity provider, is a separate row that has no natural owner and will go unwritten unless the program claims it.
 
 ## Common failure modes
 

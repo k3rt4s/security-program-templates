@@ -120,6 +120,7 @@ Everything else should be exceptable in principle. A non-exceptable list that ru
 - Exceptions above the executive tier, and the count past their second renewal, appear in the compliance and audit section of the [quarterly board update](../board-reporting/quarterly-security-update-template.md).
 - When an incident occurs inside the scope of an active exception, say so plainly in the [postmortem](../incident-response/blameless-postmortem-template.md). The exception is a contributing factor and often a root cause, and a postmortem that omits a live waiver covering the exact failure path is not a complete analysis. It is also the strongest available evidence at the next renewal review.
 - An AI system running outside policy on purpose is an exception like any other, not an annotation on the [AI system register](../ai-governance/ai-system-register-pattern.md).
+- A vendor onboarded despite failing the assessment its tier requires is an exception, with an expiry and a compensating control, rather than a note in the vendor file. See the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md). This is one of the most common routes by which an undocumented gap enters an otherwise disciplined program, because the commercial pressure arrives with a date attached and the security objection does not.
 
 ## Common failure modes
 

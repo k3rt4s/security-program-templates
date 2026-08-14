@@ -77,6 +77,7 @@ A control mapping is not a one-time artifact. The cadence:
 
 - A control that a mapping claims as covered, but which a live [security exception](../risk-management/security-exception-record.md) waives for some part of the scope, is a mapping defect and an audit exposure. Reconcile the exception register against the mapping at the annual spot-audit, and treat any control named in an audit assertion or a customer commitment as ineligible for exception in the first place.
 - Gaps found in step 3 above are remediation work, not risks. They belong on a remediation backlog. The risk is the consequence of the gap, written in the standard form on the [risk register](../risk-management/risk-register-pattern.md). Keeping these separate is the same discipline that keeps a register from filling with control gaps.
+- Where the evidence behind a control is a vendor's certification rather than something you operate, the mapping should say so explicitly and name the vendor. That one annotation is what turns a lapsed or rescoped vendor certification into a mapping defect you find on your own schedule rather than a surprise an auditor finds on theirs. The tiering that determines how closely that vendor is watched is in the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md).
 - Open findings, certification status, and framework changes are section 5 of the [quarterly board update](../board-reporting/quarterly-security-update-template.md).
 
 ## Common failure modes
