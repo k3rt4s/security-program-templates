@@ -1,6 +1,6 @@
 # Security metrics catalog
 
-A working catalog of security metrics where every entry carries the two fields that are almost never published, how the number is made to look good without anything improving and what it is silent about.
+A working catalog of security metrics where every entry carries the two fields almost nobody publishes: how the number is gamed, and what it stays silent about.
 
 Metrics catalogs are abundant and nearly all of them are lists of definitions. A definition is the easy half. The hard half is knowing what each number does when someone has an incentive to move it, and what it leaves out, because a program steered by metrics that nobody has stress-tested optimizes for the measurement rather than the outcome, and does so invisibly.
 

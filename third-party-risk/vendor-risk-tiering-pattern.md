@@ -1,6 +1,6 @@
 # Vendor risk tiering and assessment depth
 
-A working pattern for deciding how hard to look at each third party, opinionated about the tiering dimension that most programs leave out and the assessment work that tiering is supposed to make proportionate.
+A working pattern for deciding how hard to look at each third party, opinionated about the tiering dimension most programs leave out and the assessment work tiering should make proportionate.
 
 Third-party exposure is consistently named as the hardest part of becoming resilient, and the standard response is a questionnaire. The questionnaire is not the problem. Sending the same questionnaire to every vendor is the problem, because it makes the assessment cost constant while the exposure varies by three orders of magnitude, and a program that costs the same for a facilities contract as for a vendor with write access to production will run out of capacity before it runs out of vendors.
 

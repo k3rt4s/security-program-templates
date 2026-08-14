@@ -10,11 +10,11 @@ Markdown only. No code. Each document is opinionated about the things that most 
 
 - [ai-governance/](ai-governance/README.md): Patterns for the inventory of AI systems an organization actually runs, covering the use-case unit of registration, three classes of autonomy, discovery of unapproved tools, and the tested shutdown.
 - [board-reporting/](board-reporting/README.md): Templates for the quarterly security update delivered to a board or board committee, covering structure, indicators, and the discipline around what to ask from the board.
-- [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks (NIST 800-53, ISO/IEC 27001, SOC 2, CIS Controls) with honest coverage qualifiers, and for the register of obligations that actually…
-- [identity/](identity/README.md): Patterns for access review and entitlement certification, covering who is capable of reviewing an entitlement, what population is small enough to review well, and why revocation rather than decision…
+- [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks with honest coverage qualifiers, and for the register of obligations that actually bind an organization.
+- [identity/](identity/README.md): Patterns for access review and entitlement certification, covering who can actually judge an entitlement and why revocation rather than decision is the deliverable.
 - [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems, tabletop exercise design and after-action, and the contemporaneous record of a cybersecurity materiality determination.
 - [metrics/](metrics/README.md): Patterns for choosing security metrics that change decisions, with each metric's gaming mode and blind spot recorded alongside its definition.
-- [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception and risk acceptance record, covering risk statement format, a 5-point likelihood and impact rubric anchored to time and money…
+- [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception record, covering risk statement format, a likelihood and impact rubric anchored to time and money, and the bar for an Accept.
 - [third-party-risk/](third-party-risk/README.md): Patterns for tiering third parties by what they can do to you rather than by what you pay them, and for scaling assessment depth, evidence review, and offboarding to that tier.
 - [FUTURE_FEATURES.md](FUTURE_FEATURES.md): Candidate documents for this repository, with the reason each is a candidate and the bar it would have to clear to be written.
 

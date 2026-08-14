@@ -1,6 +1,6 @@
 # Security exception and risk acceptance record
 
-A working pattern for the record that documents a deliberate departure from policy, opinionated about the discipline that keeps an exception register from becoming a permanent list of things the organization has quietly stopped doing.
+A working pattern for the record that documents a deliberate departure from policy, opinionated about the discipline that keeps an exception register from becoming permanent.
 
 Every security program accumulates gaps it has decided to live with. The difference between a mature program and an immature one is not the number of gaps, it is whether each one is written down, owned, bounded, and priced. This is the artifact that does that, and it is the operational other half of the Accept treatment on the [risk register](risk-register-pattern.md).
 

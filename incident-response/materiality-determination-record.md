@@ -1,6 +1,6 @@
 # Cybersecurity materiality determination record
 
-A working pattern for the contemporaneous record of how an organization decided whether a cybersecurity incident was material, opinionated about the separation between facts and judgment that makes the record defensible a year later.
+A working pattern for the contemporaneous record of how an organization decided whether a cybersecurity incident was material, opinionated about the separation between facts and judgment.
 
 This is a process template, not legal advice. Materiality is a legal determination made with counsel, and the conclusions in any real record belong to the disclosure decision-makers rather than to the security function. What this document describes is the artifact that captures the decision, which is the part security is usually asked to produce and usually has no format for.
 

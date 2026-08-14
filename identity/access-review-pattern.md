@@ -1,6 +1,6 @@
 # Access review and entitlement certification
 
-A working pattern for reviewing who can do what, opinionated about the two choices that decide whether a campaign finds anything: who does the reviewing, and what is small enough to be worth reviewing at all.
+A working pattern for reviewing who can do what, opinionated about the two choices that decide whether a campaign finds anything: who reviews, and what is small enough to review well.
 
 Access review is the control most likely to be performed diligently and produce nothing. The failure is structural rather than a matter of effort, and it comes from asking the wrong person to make a judgment they have no basis for, about a population too large for anyone to consider carefully. Both are design decisions, and both are usually made by whatever the identity governance tool defaults to.
 

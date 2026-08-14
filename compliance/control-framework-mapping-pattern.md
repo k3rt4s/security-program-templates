@@ -1,6 +1,6 @@
 # Control framework mapping pattern
 
-A working pattern for mapping security controls across multiple frameworks (NIST SP 800-53, ISO/IEC 27001 Annex A, SOC 2 Trust Services Criteria, CIS Critical Security Controls, and house standards) without losing the meaning of any of them. Used for compliance scope analysis, certification preparation, and answering "are we already covered" questions during contract or audit response.
+A working pattern for mapping security controls across multiple frameworks, opinionated about what a mapping can honestly claim and about the coverage qualifiers that survive an auditor reading them.
 
 ## Why mapping is harder than it looks
 
