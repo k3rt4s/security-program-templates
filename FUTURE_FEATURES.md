@@ -15,15 +15,7 @@ A document belongs here only if it clears all four of these. Most candidate topi
 
 ## Candidates
 
-Topics that have cleared the bar above and are waiting to be written.
-
-### Security metrics catalog
-
-Weaker as a standalone, and it needs care. The [board update](board-reporting/quarterly-security-update-template.md) already carries an indicator section with nine examples, and a catalog risks becoming a longer version of a table that is already there.
-
-What would justify it: every metric shipping with two fields nobody publishes, its gaming mode and its blind spot. How the number is made to look good without the underlying thing improving, and what it is silent about. A patch-latency metric improves when the asset inventory shrinks. A phishing click rate improves when the simulations get easier. A mean-time-to-detect that counts only incidents that were detected is silent about the ones that were not, which is the population that matters. A catalog of forty metrics with those two fields filled in honestly would be genuinely scarce; the same catalog without them exists a hundred times over.
-
-If written, it should be structured so the board template's indicator section links into it rather than duplicating it.
+Topics that have cleared the bar above and are waiting to be written. Nothing sits here at present; everything assessed against the bar has either shipped or is in the list below.
 
 ## Recorded, not assessed
 
@@ -47,4 +39,5 @@ Items are annotated here when they ship, rather than deleted, so the reasoning s
 - **Materiality determination record** — shipped, [incident-response/](incident-response/README.md).
 - **Security exception and risk acceptance record** — shipped, [risk-management/](risk-management/README.md).
 - **Vendor risk tiering** — shipped, [third-party-risk/](third-party-risk/README.md).
+- **Security metrics catalog** — shipped, [metrics/](metrics/README.md). The recorded concern was that it would become a longer version of the board update's indicator table. Resolved by splitting the two jobs: the catalog is the source and carries every metric's gaming mode and blind spot, and the board section is the selection problem, which is the harder half. The board template now links into the catalog instead of restating it.
 - **Tabletop exercise design and after-action** — shipped, [incident-response/](incident-response/README.md). The open question recorded here before writing was whether the after-action duplicated the postmortem enough to be a section of it instead. Resolved as a separate document: the two differ in whether the facts were discovered or authored, and half of the exercise document is design work that has no postmortem analogue, since reality does the design. What they share is the destination, so the after-action reuses the postmortem's action-item table verbatim rather than inventing a second format. One format, two documents, one backlog.

@@ -12,6 +12,7 @@ Markdown only. No code. Each document is opinionated about the things that most 
 - [board-reporting/](board-reporting/README.md): Templates for the quarterly security update delivered to a board or board committee, covering structure, indicators, and the discipline around what to ask from the board.
 - [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks (NIST 800-53, ISO/IEC 27001, SOC 2, CIS Controls) with honest coverage qualifiers that survive audit scrutiny.
 - [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems, tabletop exercise design and after-action, and the contemporaneous record of a cybersecurity materiality determination.
+- [metrics/](metrics/README.md): Patterns for choosing security metrics that change decisions, with each metric's gaming mode and blind spot recorded alongside its definition.
 - [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception and risk acceptance record, covering risk statement format, a 5-point likelihood and impact rubric anchored to time and money…
 - [third-party-risk/](third-party-risk/README.md): Patterns for tiering third parties by what they can do to you rather than by what you pay them, and for scaling assessment depth, evidence review, and offboarding to that tier.
 - [FUTURE_FEATURES.md](FUTURE_FEATURES.md): Candidate documents for this repository, with the reason each is a candidate and the bar it would have to clear to be written.
@@ -37,6 +38,8 @@ The [AI system register](ai-governance/ai-system-register-pattern.md) inventorie
 The [vendor tiering pattern](third-party-risk/vendor-risk-tiering-pattern.md) decides how hard to look at each third party, so that assessment effort tracks what a vendor can actually do to you. It feeds the register in two directions: a specific vendor failure is a risk row, and concentration across the critical tier is a risk row that belongs to nobody in particular unless the program claims it.
 
 The [control mapping](compliance/control-framework-mapping-pattern.md) makes one set of evidence serve several frameworks, so the program is not tested five times for the same control.
+
+Running underneath all of it, the [metrics catalog](metrics/security-metrics-catalog.md) is where the numbers these artifacts produce get chosen, each one recorded with how it can be made to look good without anything improving and what it stays silent about.
 
 The [quarterly board update](board-reporting/quarterly-security-update-template.md) is where the loop surfaces: top risks from the register, exceptions past their second renewal, material incidents and their determinations, AI inventory coverage, third-party posture, and audit posture from the mapping. The board update is a view over the other artifacts, not a document written from scratch each quarter. When it has to be written from scratch, that is the diagnostic.
 

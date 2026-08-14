@@ -41,6 +41,8 @@ Examples of indicators that survive board scrutiny:
 
 Indicators that look like security work but rarely belong on a board deck: number of vulnerabilities, number of blocked emails, number of EDR alerts. Volume is not signal.
 
+The table above is an illustrative selection, not a menu. The fuller set, with each metric's gaming mode and its blind spot recorded next to its definition, is the [security metrics catalog](../metrics/security-metrics-catalog.md). The catalog is the source; this section is the selection problem, and the selection is the harder half. Never put the catalog itself in front of a board.
+
 The last three rows are worth explaining, because they are unusual and each one reads correctly to a director without training.
 
 Aged exceptions is a direct read on whether the program is closing its known gaps or accumulating them, and it is the number that moves when remediation goes unfunded. Shutdown readiness answers the question a board will eventually ask about AI, which is not how the models are governed on paper but how fast the company could stop one, and it is answerable only from drills that were actually run. Vendor tier reductions is the one that will look strange at first and is the most honest of the three: it counts vendors whose access was narrowed, which is exposure actually removed, as opposed to the review-SLA row above it, which counts work performed. Showing an activity measure next to an effect measure for the same program area is a quiet way to teach a board the difference, and the pair is more persuasive than either alone.
@@ -145,6 +147,7 @@ This deck should be a view over artifacts the program already maintains, not a d
 | Compliance and audit posture              | [Control mapping](../compliance/control-framework-mapping-pattern.md) and the audit finding backlog                                                                                           |
 | Third-party posture                       | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md): critical-tier count, review SLA, tier reductions achieved, and concentration across the critical tier                   |
 | Response readiness                        | [Tabletop exercises](../incident-response/tabletop-exercise-pattern.md) run this year: scenario families covered, executive participation, and findings still open                            |
+| The indicator set itself                  | [Security metrics catalog](../metrics/security-metrics-catalog.md), selecting six to ten and carrying each one's denominator                                                                  |
 | Aged exceptions, and the asks behind them | [Exception register](../risk-management/security-exception-record.md), filtered to executive tier and to anything past a second renewal                                                       |
 
 If assembling the deck requires original research rather than a query across those artifacts, the deck is not the problem. The underlying instruments are not being maintained at the cadence the board's questions assume, and the quarterly scramble is the symptom.
