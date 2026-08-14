@@ -41,7 +41,9 @@ For an organization that holds (or is pursuing) certifications across SOC 2 plus
 1. **Pick the deepest framework as the canonical source.** Usually NIST 800-53 (rev 5) for organizations doing federal work, or ISO/IEC 27001/27002 for organizations centered on international certification. The canonical source is where evidence lives.
 2. **Map each canonical control outward to the certification targets.** This is the table above.
 3. **Identify gaps in the canonical source against any target.** Controls in the target with no full or partial coverage from the canonical source are real work, not paperwork.
-4. **Adopt a small house-standard layer for things the canonical framework underspecifies.** Examples: AI / model governance, privacy-by-design requirements, customer-data-handling specifics. The house-standard layer maps both ways.
+4. **Adopt a small house-standard layer for things the canonical framework underspecifies.** Examples: AI and model governance, privacy-by-design requirements, customer-data-handling specifics. The house-standard layer maps both ways.
+
+AI governance is currently the clearest case for that fourth layer. The AI management-system standard (ISO/IEC 42001) and the NIST AI Risk Management Framework are both real targets, but the crosswalks between them and the established security frameworks are considerably less mature than the 800-53 to 27001 lineage, and the control language does not decompose cleanly onto existing security controls. The honest posture is to carry AI controls as a house-standard layer with explicit partial mappings outward, rather than to claim coverage from security controls that were not written for the problem. What makes any of it tractable is the inventory: see the [AI system register](../ai-governance/ai-system-register-pattern.md), which is the precondition for all three targets rather than a deliverable under any one of them.
 
 This stops the common antipattern of running parallel control programs per certification, which doubles evidence work and produces contradictions.
 
@@ -70,6 +72,12 @@ A control mapping is not a one-time artifact. The cadence:
 - **On framework revision** (rev 4 -> rev 5, ISO 2013 -> 2022): full mapping refresh, treated as a discrete project with a named owner.
 - **On scope change** (new business unit, new product line, new regulated data type): refresh the affected slice; do not let scope drift silently.
 - **Annually:** spot-audit a sample of mappings against current evidence. Mappings rot when controls evolve and the table does not.
+
+## Where this connects
+
+- A control that a mapping claims as covered, but which a live [security exception](../risk-management/security-exception-record.md) waives for some part of the scope, is a mapping defect and an audit exposure. Reconcile the exception register against the mapping at the annual spot-audit, and treat any control named in an audit assertion or a customer commitment as ineligible for exception in the first place.
+- Gaps found in step 3 above are remediation work, not risks. They belong on a remediation backlog. The risk is the consequence of the gap, written in the standard form on the [risk register](../risk-management/risk-register-pattern.md). Keeping these separate is the same discipline that keeps a register from filling with control gaps.
+- Open findings, certification status, and framework changes are section 5 of the [quarterly board update](../board-reporting/quarterly-security-update-template.md).
 
 ## Common failure modes
 

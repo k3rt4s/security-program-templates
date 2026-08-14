@@ -27,16 +27,20 @@ A small dashboard, no more than 6 to 10 indicators, mixing leading and lagging m
 
 Examples of indicators that survive board scrutiny:
 
-| Indicator                      | Definition                                                               | Type    |
-| ------------------------------ | ------------------------------------------------------------------------ | ------- |
-| Critical patch latency         | Days from vendor release to 95% deployment for severity-critical patches | Lagging |
-| Phishing simulation click rate | Percent of simulated phishing emails clicked, by population              | Leading |
-| MFA coverage                   | Percent of in-scope identities with phishing-resistant MFA               | Leading |
-| Mean time to detect (MTTD)     | Median time from initial event to SOC alert, security incidents only     | Lagging |
-| Third-party risk-review SLA    | Percent of in-scope vendors reviewed within their cadence                | Leading |
-| Crown-jewel control coverage   | Percent of named-asset controls passing most recent test                 | Leading |
+| Indicator                      | Definition                                                                | Type    |
+| ------------------------------ | ------------------------------------------------------------------------- | ------- |
+| Critical patch latency         | Days from vendor release to 95% deployment for severity-critical patches  | Lagging |
+| Phishing simulation click rate | Percent of simulated phishing emails clicked, by population               | Leading |
+| MFA coverage                   | Percent of in-scope identities with phishing-resistant MFA                | Leading |
+| Mean time to detect (MTTD)     | Median time from initial event to SOC alert, security incidents only      | Lagging |
+| Third-party risk-review SLA    | Percent of in-scope vendors reviewed within their cadence                 | Leading |
+| Crown-jewel control coverage   | Percent of named-asset controls passing most recent test                  | Leading |
+| Aged security exceptions       | Count of exceptions past their second renewal, by approval tier           | Leading |
+| Agentic AI shutdown readiness  | Percent of agentic AI systems with a shutdown drilled in the last quarter | Leading |
 
 Indicators that look like security work but rarely belong on a board deck: number of vulnerabilities, number of blocked emails, number of EDR alerts. Volume is not signal.
+
+Two of the rows above are worth explaining because they are unusual and both read correctly without training. Aged exceptions is a direct read on whether the program is closing its known gaps or accumulating them, and it is the number that moves when remediation goes unfunded. Shutdown readiness answers the question a board will eventually ask about AI, which is not how the models are governed on paper but how fast the company could stop one, and it is answerable only from drills that were actually run. Both come from artifacts the program already maintains: the [exception register](../risk-management/security-exception-record.md) and the [AI system register](../ai-governance/ai-system-register-pattern.md).
 
 ## Section 3: Significant incidents and near misses
 
@@ -46,6 +50,7 @@ For each material incident or near miss in the quarter, one slide or one half-pa
 - **Customer / regulatory / financial impact.** Quantified where possible.
 - **Detection path.** How did we find it. This is often more diagnostic of program health than the incident itself.
 - **Containment timeline.** Time to detect, time to contain, time to communicate.
+- **Disclosure determination.** For a registrant, whether the incident entered the materiality process and what was determined, referencing the [determination record](../incident-response/materiality-determination-record.md) by ID. Report the count of incidents that entered the process alongside the count determined material; a quarter with disclosures and no visible process behind them is the thing an audit committee will ask about.
 - **Action items and dates.** Tied to remediation backlog with owners.
 
 If there are no material incidents, say so in one sentence and move on. Do not invent narrative.
@@ -58,7 +63,8 @@ One slide per program area in scope, no more than 4 to 6 areas total. Suggested 
 - Vulnerability and patch management
 - Third-party / vendor risk
 - Detection and response
-- Data protection (including AI / model governance, if relevant)
+- Data protection
+- AI governance, where the organization operates AI systems of consequence: inventory coverage from the [AI system register](../ai-governance/ai-system-register-pattern.md), how many agentic systems are live, and shutdown drill results
 - Resilience (BCP / DR)
 
 Each slide:
@@ -78,6 +84,7 @@ A short status of regulatory and audit obligations:
 - Compliance certifications status (in-scope frameworks, renewal dates).
 - Regulatory engagements active this quarter.
 - Material policy or framework changes since last meeting.
+- Security exceptions at the executive approval tier, and the count past their second renewal. A board does not need the register; it needs the two or three waivers that were approved because remediation is unfunded, since those are decisions the board can actually change.
 
 Tie back to the risk register where applicable; do not list the same item twice in different sections.
 
@@ -120,6 +127,20 @@ Carry as appendices, not as part of the main flow:
 - Glossary of terms used in the deck.
 
 Reference the appendix when a director asks for detail. Do not lead with it.
+
+## Where this connects
+
+This deck should be a view over artifacts the program already maintains, not a document written from scratch each quarter. Where each section comes from:
+
+| Section                                   | Source artifact                                                                                                                                                                               |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Top three risks, and movement             | [Risk register](../risk-management/risk-register-pattern.md), sorted by residual score with the prior quarter's score alongside                                                               |
+| Significant incidents                     | [Postmortems](../incident-response/blameless-postmortem-template.md) closed in the quarter, plus their [materiality determinations](../incident-response/materiality-determination-record.md) |
+| AI governance                             | [AI system register](../ai-governance/ai-system-register-pattern.md): discovery coverage, agentic count, drill results                                                                        |
+| Compliance and audit posture              | [Control mapping](../compliance/control-framework-mapping-pattern.md) and the audit finding backlog                                                                                           |
+| Aged exceptions, and the asks behind them | [Exception register](../risk-management/security-exception-record.md), filtered to executive tier and to anything past a second renewal                                                       |
+
+If assembling the deck requires original research rather than a query across those artifacts, the deck is not the problem. The underlying instruments are not being maintained at the cadence the board's questions assume, and the quarterly scramble is the symptom.
 
 ## Common failure modes
 

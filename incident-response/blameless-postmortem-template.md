@@ -27,10 +27,15 @@ Status:             Closed / In remediation
 Detection time:     2026-03-04 14:22 UTC
 Containment time:   2026-03-04 17:48 UTC
 Resolution time:    2026-03-05 09:10 UTC
+Related risk ID:    OPS-014
+Related records:    EXC-2026-031 (exception active over the failure path)
+                    MAT-2026-03 (materiality determination)
 Postmortem author:  <name>
 Reviewers:          <2 to 4 names, including one engineering manager outside the immediate team>
 Distribution:       Engineering, Security, Affected business owners
 ```
+
+The three related identifiers are worth carrying in the header rather than buried in the analysis. They are the first thing a reader from outside engineering looks for, and their absence is itself informative: an incident with no matching risk register row means the risk was never enumerated, which is a finding in its own right.
 
 ## Summary
 
@@ -62,13 +67,13 @@ A chronological list of events with UTC timestamps. Include:
 
 Two columns: timestamp, event. Keep entries terse; the narrative goes in the analysis sections, not in the timeline.
 
-| Timestamp (UTC)  | Event                                                                                                   |
-| ---------------- | ------------------------------------------------------------------------------------------------------- |
-| 2026-03-03 02:11 | First malicious authentication attempt observed in retrospective log review (not detected at the time). |
-| 2026-03-04 14:22 | EDR alert on host `<asset>`; SOC analyst paged.                                                         |
-| 2026-03-04 14:35 | Incident declared at SEV3 by on-call lead.                                                              |
-| 2026-03-04 15:10 | Severity upgraded to SEV2 after scope expanded to <n> hosts.                                            |
-| ...              | ...                                                                                                     |
+| Timestamp (UTC)  | Event                                                                                                                                          |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-03-03 02:11 | First credential-stuffing attempt against the AccountView Classic admin role, observed in retrospective log review (not detected at the time). |
+| 2026-03-04 14:22 | Detection fires on admin authentication from an unrecognized ASN; SOC analyst paged.                                                           |
+| 2026-03-04 14:35 | Incident declared at SEV3 by on-call lead.                                                                                                     |
+| 2026-03-04 15:10 | Severity upgraded to SEV2 after session replay showed customer-record access.                                                                  |
+| ...              | ...                                                                                                                                            |
 
 ## What went well
 
@@ -93,6 +98,8 @@ Distinguish causes from contributing factors. Use 5-whys, Ishikawa, or a similar
 - **Trigger:** the proximate event that initiated the chain. The trigger is rarely the most useful place to intervene; the conditions are.
 
 Be careful with human error. "Operator ran the wrong command" is almost never a complete root cause. The useful question is why the system permitted, defaulted to, or failed to validate the wrong command.
+
+Be equally careful with the opposite framing. Where an active [security exception](../risk-management/security-exception-record.md) covered the failure path, say so explicitly and name the record. The exception is a contributing factor and is frequently the root cause, and a postmortem that omits a live waiver over the exact gap that failed is not a complete analysis. This is not an accountability finding against whoever approved it; the exception was a documented decision made with stated compensating controls, and what the postmortem contributes is evidence about whether those controls performed as the approval assumed. That evidence is worth more at the next renewal review than anything else the program will produce.
 
 ## Detection and response analysis
 
@@ -126,6 +133,13 @@ A short list of terms used in the postmortem that an executive distribution may 
 - Publish to the agreed internal distribution within 14 days of incident closure for SEV1, 30 days for SEV2.
 - Track action items in the engineering backlog with the postmortem ID; do not let them live only inside the incident-management tool.
 - Re-review the postmortem at the next quarterly security update and surface any action items that have slipped past their due date.
+
+## Where this connects
+
+- The [materiality determination record](materiality-determination-record.md) runs in parallel on a different clock, with a different owner and a different question. The postmortem asks why this happened and what we change; the determination asks whether a reasonable investor would consider it important. Do not merge them. The postmortem may be cited by the determination as a source of facts, and it must not be the vehicle for the determination.
+- The realized risk is a row on the [risk register](../risk-management/risk-register-pattern.md). Name it. If there is no such row, that is a finding worth stating: the risk was never enumerated, and the register's coverage is the thing to fix.
+- Any active [exception](../risk-management/security-exception-record.md) over the failure path is named in the header and analysed in the causes section.
+- Material incidents, their detection paths, and the status of their action items appear in section 3 of the [quarterly board update](../board-reporting/quarterly-security-update-template.md). Brief the committee chair when the incident closes, not when the deck is assembled.
 
 ## Common failure modes
 

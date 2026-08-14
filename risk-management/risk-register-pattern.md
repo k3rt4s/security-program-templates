@@ -16,9 +16,9 @@ Use the form:
 
 > A `<threat source>` may exploit `<vulnerability>` in `<asset>`, causing `<consequence>`.
 
-Worked example:
+Worked example, row `OPS-014` from the [Ambervale thread](../README.md#the-worked-example):
 
-> A financially motivated external attacker may exploit weak authentication in the legacy customer portal, causing exposure of 200,000 customer PII records and a notifiable breach under state breach-notification laws.
+> A financially motivated external attacker may exploit weak authentication in AccountView Classic, the legacy customer portal, causing exposure of up to 200,000 customer PII records and a notifiable breach under state breach-notification laws.
 
 This format forces clarity on four dimensions a board cares about: who is doing this to us, how, against what, and how bad. If a risk cannot be written this way, it is probably not a risk; it is a vulnerability, a control gap, or an issue.
 
@@ -75,7 +75,16 @@ Calibrate these bands to the organization. The thresholds above are illustrative
 - **Avoid:** stop doing the activity that generates the risk. Decommission the system, exit the line of business, do not sign the contract.
 - **Mitigate:** add or strengthen controls to lower likelihood or impact. Most rows live here.
 - **Transfer:** shift financial consequence via insurance, contract, or to another party. Transfer never eliminates a risk; it changes who pays.
-- **Accept:** carry the residual risk without further action. The bar is named-executive sign-off, recorded with the rationale, recorded for a finite period, and re-reviewed at expiry.
+- **Accept:** carry the residual risk without further action. The bar is named-executive sign-off, recorded with the rationale, recorded for a finite period, and re-reviewed at expiry. The record that holds that sign-off is the [security exception and risk acceptance record](security-exception-record.md); an Accept treatment with no such record behind it is an undocumented gap wearing the paperwork of a decision.
+
+## Where this connects
+
+The register is the spine of the program and most of its rows point somewhere else. Keep the links by ID in both directions.
+
+- A row treated by deliberately not meeting a requirement has a [security exception record](security-exception-record.md) behind it. That record's compensating controls are what appear in this register's existing-controls column, and its expiry date is what should drive this row's next review.
+- The top rows, with movement since last quarter, are section 1 of the [quarterly board update](../board-reporting/quarterly-security-update-template.md). Rows that never appear there are not being governed, they are being filed.
+- When a risk materializes, the [postmortem](../incident-response/blameless-postmortem-template.md) names the register row. A realized risk that was scored Unlikely is a calibration finding, and the honest move is to re-score the neighbors that share its reasoning rather than only the row that fired.
+- Risks about AI systems are written here in the standard form and cite the relevant row on the [AI system register](../ai-governance/ai-system-register-pattern.md). The AI register inventories; this register scores.
 
 ## Common failure modes
 
