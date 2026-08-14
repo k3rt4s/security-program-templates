@@ -15,17 +15,15 @@ A document belongs here only if it clears all four of these. Most candidate topi
 
 ## Candidates
 
-Topics that have cleared the bar above and are waiting to be written. Nothing sits here at present; everything assessed against the bar has either shipped or is in the list below.
+Topics that have cleared the bar above and are waiting to be written. Nothing sits here at present. Everything assessed so far has either shipped or is recorded below with the reason it did not.
 
-## Recorded, not assessed
+## Assessed and held
 
-These came out of the same research pass and no decision has been taken on any of them. Listed so the reasoning is not rediscovered from scratch.
+Five topics from the research pass were put through the bar. Two passed and shipped; the results for the other three are recorded here so the judgment is not repeated.
 
-- **Vulnerability and exposure management SLA.** The standard that exceptions get written against, so it has an edge into the exception record. Risk of being a policy rather than an artifact, which would fail the first test.
-- **Access review and entitlement certification.** Authorization logic scattered across applications, with no central view of who can access what, is a recurring audit finding. Needs an opinion beyond "do access reviews" to clear the third test.
-- **Regulatory applicability register.** Which regimes bind us, when they bite, and who owns each. Genuinely useful and it dates fast, so it would have to be a pattern for building one rather than a calendar of deadlines.
-- **Customer assurance package.** The questionnaire response burden is real and large. It is closer to a sales enablement artifact than to a security program artifact, so it is the weakest fit against the first test.
-- **Security program charter, or a first-90-days plan.** An artifact a new security leader produces, with a clean opinion available about what belongs in it. No edge into the current loop, which is the open question.
+- **Security program charter, or a first-90-days plan.** Borderline. A sharp framing is available, that the charter's only real job is writing down decision rights, meaning who accepts risk at what level, who stops a release, who declares an incident, who approves an exception, and that the rest of a typical charter is decoration. The problem is that the [exception record](risk-management/security-exception-record.md) approval-tier table already establishes half of that, so the overlap is real rather than theoretical. Held until the overlap can be resolved by deciding which document owns decision rights.
+- **Customer assurance package.** Weak pass. The one underexplored angle is that every answer given in a questionnaire is a commitment that constrains the future exception process, which now connects to the contractual and voluntary rows of the [regulatory applicability register](compliance/regulatory-applicability-register.md). Against it, the topic drags toward tooling comparison, which this repository does not do, and the surrounding advice is saturated.
+- **Vulnerability and exposure management SLA.** Fails the first test. An SLA is a standard, and this repository holds no standards. It scores well on every other test, so the options are to reframe it as an exposure prioritization pattern, meaning how to decide what to fix first when the backlog structurally exceeds capacity, or to drop it. The reframe is weaker because it begins to overlap the risk register.
 
 ## Notes on vintage
 
@@ -39,5 +37,7 @@ Items are annotated here when they ship, rather than deleted, so the reasoning s
 - **Materiality determination record** — shipped, [incident-response/](incident-response/README.md).
 - **Security exception and risk acceptance record** — shipped, [risk-management/](risk-management/README.md).
 - **Vendor risk tiering** — shipped, [third-party-risk/](third-party-risk/README.md).
+- **Access review and entitlement certification** — shipped, [identity/](identity/README.md). Cleared the third test on the position that the reviewer is usually the wrong person: a people manager cannot tell what an entitlement grants and pays a cost for revoking but none for approving, so approve-all is the rational response to a badly framed question.
+- **Regulatory applicability register** — shipped, [compliance/](compliance/README.md). Cleared the second test decisively by closing a hole this repository had created: the materiality record instructs you to list every applicable notification clock without saying how you would know them.
 - **Security metrics catalog** — shipped, [metrics/](metrics/README.md). The recorded concern was that it would become a longer version of the board update's indicator table. Resolved by splitting the two jobs: the catalog is the source and carries every metric's gaming mode and blind spot, and the board section is the selection problem, which is the harder half. The board template now links into the catalog instead of restating it.
 - **Tabletop exercise design and after-action** — shipped, [incident-response/](incident-response/README.md). The open question recorded here before writing was whether the after-action duplicated the postmortem enough to be a section of it instead. Resolved as a separate document: the two differ in whether the facts were discovered or authored, and half of the exercise document is design work that has no postmortem analogue, since reality does the design. What they share is the destination, so the after-action reuses the postmortem's action-item table verbatim rather than inventing a second format. One format, two documents, one backlog.

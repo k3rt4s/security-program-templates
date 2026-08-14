@@ -49,6 +49,8 @@ Applicable notification clocks for this incident
 
 Populate this from the actual obligations, not from a template. The value is in noticing during the incident that a contractual 24-hour clock expired while the committee was still assembling.
 
+Maintaining that list per incident does not work, because the first hour of an incident is the worst time to establish what binds you. Derive it from a standing [regulatory applicability register](../compliance/regulatory-applicability-register.md), which holds each duty with its trigger, its duration, and its owner, and which produces exactly this view sorted tightest first.
+
 ## Header
 
 ```text

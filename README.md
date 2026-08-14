@@ -10,7 +10,8 @@ Markdown only. No code. Each document is opinionated about the things that most 
 
 - [ai-governance/](ai-governance/README.md): Patterns for the inventory of AI systems an organization actually runs, covering the use-case unit of registration, three classes of autonomy, discovery of unapproved tools, and the tested shutdown.
 - [board-reporting/](board-reporting/README.md): Templates for the quarterly security update delivered to a board or board committee, covering structure, indicators, and the discipline around what to ask from the board.
-- [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks (NIST 800-53, ISO/IEC 27001, SOC 2, CIS Controls) with honest coverage qualifiers that survive audit scrutiny.
+- [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks (NIST 800-53, ISO/IEC 27001, SOC 2, CIS Controls) with honest coverage qualifiers, and for the register of obligations that actually…
+- [identity/](identity/README.md): Patterns for access review and entitlement certification, covering who is capable of reviewing an entitlement, what population is small enough to review well, and why revocation rather than decision…
 - [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems, tabletop exercise design and after-action, and the contemporaneous record of a cybersecurity materiality determination.
 - [metrics/](metrics/README.md): Patterns for choosing security metrics that change decisions, with each metric's gaming mode and blind spot recorded alongside its definition.
 - [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception and risk acceptance record, covering risk statement format, a 5-point likelihood and impact rubric anchored to time and money…
@@ -37,7 +38,9 @@ The [AI system register](ai-governance/ai-system-register-pattern.md) inventorie
 
 The [vendor tiering pattern](third-party-risk/vendor-risk-tiering-pattern.md) decides how hard to look at each third party, so that assessment effort tracks what a vendor can actually do to you. It feeds the register in two directions: a specific vendor failure is a risk row, and concentration across the critical tier is a risk row that belongs to nobody in particular unless the program claims it.
 
-The [control mapping](compliance/control-framework-mapping-pattern.md) makes one set of evidence serve several frameworks, so the program is not tested five times for the same control.
+The [access review pattern](identity/access-review-pattern.md) covers who can do what, scoped to the access that can do damage and reviewed by someone capable of judging it, which is rarely the people manager the tooling defaults to.
+
+The [regulatory applicability register](compliance/regulatory-applicability-register.md) records the duties that actually bind the organization, one row per duty rather than per regulation, drawn from statute, contract, and public commitment alike. It is what the materiality record assumes exists when it tells you to list every clock. The [control mapping](compliance/control-framework-mapping-pattern.md) then makes one set of evidence serve several frameworks, so the program is not tested five times for the same control.
 
 Running underneath all of it, the [metrics catalog](metrics/security-metrics-catalog.md) is where the numbers these artifacts produce get chosen, each one recorded with how it can be made to look good without anything improving and what it stays silent about.
 
@@ -60,6 +63,8 @@ The thread that runs through the templates:
 | `AI-007`, `AI-012` | AI system register | A support-ticket drafting assistant and a billing-dispute agent that can issue account credits. Same vendor, same model, two very different rows. |
 | `TP-041` | Vendor tiering | An observability vendor at four figures a month holding a write-scoped token into production. Tier 4, and roughly a hundredth the spend of the facilities contract sitting in Tier 1. |
 | `TTX-2026-02` | Tabletop after-action | The exercise that postmortem action item AI-03 called for, run as a third-party compromise scenario. Two of its three forced decisions stalled on authority nobody in the room held. |
+| `AR-2026-Q2` | Access review campaign | Standing privileged roles and non-human identities in production. It is where the observability vendor's service account gets its permissions read back for the first time. |
+| `REG-018` | Regulatory applicability register | The 72-hour data protection notification duty, one row among several, sitting behind the tighter contractual clock that the materiality record warns about. |
 
 The [metrics catalog](metrics/security-metrics-catalog.md) has no row here on purpose. It is a reference the others draw from rather than an artifact an organization produces one instance of, so it has nothing to carry an Ambervale identifier.
 

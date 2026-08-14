@@ -93,6 +93,8 @@ Commercial offboarding and technical offboarding are different events, and the f
 
 Make the offboarding checklist a required artifact for Tier 3 and above, owned by the same person who owned the relationship, and audit it by sampling terminated vendors against the identity provider once a year. That sample is one of the cheaper and more reliably alarming exercises a program can run.
 
+Third-party accounts also fall inside the scope of the recurring campaign in the [access review pattern](../identity/access-review-pattern.md), which is where a live credential belonging to a terminated vendor usually surfaces. When it does, the finding is an offboarding failure rather than a review finding, and it should be fixed here rather than closed there.
+
 ## Where this connects
 
 - Tier and access mode are properties of the vendor relationship; the risk of a specific vendor failure is written in the standard form on the [risk register](../risk-management/risk-register-pattern.md). Concentration across Tier 4 vendors is its own row and belongs to the program rather than to a vendor owner.

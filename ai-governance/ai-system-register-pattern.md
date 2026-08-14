@@ -115,6 +115,8 @@ An agent that calls tools is an authenticated principal, and it is usually a bad
 - The rotation interval and the last rotation date.
 - Whether the identity is unique to this system. Shared identities across two agentic systems make attribution impossible during an incident and should be treated as a finding.
 
+These four are the same questions the [access review pattern](../identity/access-review-pattern.md) asks of any non-human identity, which is deliberate. Register them here, and let the recurring certification campaign be what reads the permissions back from the target system, because a scope recorded at request time and never re-read is a description of what someone intended to grant.
+
 ## Relationship to the risk register
 
 The two artifacts answer different questions and the split is worth defending. The AI register answers what is running and who owns it. The [risk register](../risk-management/risk-register-pattern.md) answers what could go wrong and what we are doing about it.
