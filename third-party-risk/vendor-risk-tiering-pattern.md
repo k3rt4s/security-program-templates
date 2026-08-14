@@ -100,6 +100,7 @@ Make the offboarding checklist a required artifact for Tier 3 and above, owned b
 - A vendor that processes your data through an AI subprocessor introduces a row on the [AI system register](../ai-governance/ai-system-register-pattern.md), and a change in that subprocessor is a reassessment trigger here. Data-processing amendments are the channel this arrives through.
 - Third-party review SLA and the count of Tier 4 vendors are already indicators in the [quarterly board update](../board-reporting/quarterly-security-update-template.md). The more useful number to add is how many vendors moved down a tier through an access change.
 - Where a vendor's certification is the evidence behind a control you claim, the [control mapping](../compliance/control-framework-mapping-pattern.md) should say so, so that a lapsed vendor certification surfaces as a mapping defect rather than as a surprise during an audit.
+- Run the third-party scenario family in the [tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md) against a Tier 4 vendor. It finds two things reliably and cheaply: the vendor contact list is stale, and nobody in the room holds the authority to revoke a live production credential belonging to a vendor. Both are properties of the relationship rather than of the vendor, which means both are yours to fix.
 
 ## Common failure modes
 

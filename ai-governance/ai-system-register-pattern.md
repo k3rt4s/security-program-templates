@@ -104,6 +104,8 @@ Someone with shutdown authority who is not the system's builder executes the doc
 
 Two failure conditions worth naming, because both are common and neither shows up in a paper review: the shutdown depends on a single person who was not reachable, and stopping the system leaves in-flight actions half-applied with no defined state. Both are findings, and both belong in the [postmortem](../incident-response/blameless-postmortem-template.md) format if a real incident exposes them first.
 
+The drill measures a procedure. It does not test whether anyone decides to invoke it, which is a different and usually weaker capability. For that, run the agentic-AI scenario family in the [tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md), where the question is who notices an agent is acting wrongly, who has the authority to stop it, and whether the actions it already took can be reversed.
+
 ## Non-human identity for agentic systems
 
 An agent that calls tools is an authenticated principal, and it is usually a badly governed one: a long-lived key, over-scoped, issued to a shared service account, rotated never. Register the identity alongside the system.

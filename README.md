@@ -11,7 +11,7 @@ Markdown only. No code. Each document is opinionated about the things that most 
 - [ai-governance/](ai-governance/README.md): Patterns for the inventory of AI systems an organization actually runs, covering the use-case unit of registration, three classes of autonomy, discovery of unapproved tools, and the tested shutdown.
 - [board-reporting/](board-reporting/README.md): Templates for the quarterly security update delivered to a board or board committee, covering structure, indicators, and the discipline around what to ask from the board.
 - [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks (NIST 800-53, ISO/IEC 27001, SOC 2, CIS Controls) with honest coverage qualifiers that survive audit scrutiny.
-- [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems and the contemporaneous record of a cybersecurity materiality determination.
+- [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems, tabletop exercise design and after-action, and the contemporaneous record of a cybersecurity materiality determination.
 - [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception and risk acceptance record, covering risk statement format, a 5-point likelihood and impact rubric anchored to time and money…
 - [third-party-risk/](third-party-risk/README.md): Patterns for tiering third parties by what they can do to you rather than by what you pay them, and for scaling assessment depth, evidence review, and offboarding to that tier.
 - [FUTURE_FEATURES.md](FUTURE_FEATURES.md): Candidate documents for this repository, with the reason each is a candidate and the bar it would have to clear to be written.
@@ -27,6 +27,8 @@ The [risk register](risk-management/risk-register-pattern.md) is the spine. It h
 When a risk is treated by deliberately not meeting a requirement, the [exception record](risk-management/security-exception-record.md) documents the departure, the compensating controls, the approver, and the expiry. It is the operational other half of the register's Accept treatment, and it cites the register row by ID.
 
 When something goes wrong, the [postmortem](incident-response/blameless-postmortem-template.md) establishes what happened and what changes. If an exception covered the failure path, the postmortem says so, and that is the strongest available evidence at the exception's next renewal review.
+
+Before something goes wrong, the [tabletop exercise pattern](incident-response/tabletop-exercise-pattern.md) is how the response gets examined without waiting for an incident to do the examining. It shares the postmortem's action-item format on purpose, so exercise findings and incident findings compete in one backlog rather than in two.
 
 In parallel and on a different clock, the [materiality determination record](incident-response/materiality-determination-record.md) captures whether the incident was material and how that was decided. Different question, different owner, different audience from the postmortem.
 
@@ -54,6 +56,7 @@ The thread that runs through the templates:
 | `MAT-2026-03` | Materiality record | The determination on that incident, concluded not material at confirmed scope, with the reassessment triggers named. |
 | `AI-007`, `AI-012` | AI system register | A support-ticket drafting assistant and a billing-dispute agent that can issue account credits. Same vendor, same model, two very different rows. |
 | `TP-041` | Vendor tiering | An observability vendor at four figures a month holding a write-scoped token into production. Tier 4, and roughly a hundredth the spend of the facilities contract sitting in Tier 1. |
+| `TTX-2026-02` | Tabletop after-action | The exercise that postmortem action item AI-03 called for, run as a third-party compromise scenario. Two of its three forced decisions stalled on authority nobody in the room held. |
 
 Ambervale is invented, as is every name, figure, and system in the examples. Any resemblance to a real organization is coincidental.
 

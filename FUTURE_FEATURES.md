@@ -15,13 +15,7 @@ A document belongs here only if it clears all four of these. Most candidate topi
 
 ## Candidates
 
-### Tabletop exercise design and after-action
-
-The stronger of the two remaining candidates. It has a clean edge into the existing set: the exercise produces an after-action item list that flows into the same backlog the [postmortem](incident-response/blameless-postmortem-template.md) feeds, and a drilled but never exercised runbook is one of the failure modes that postmortem template already names.
-
-The position worth taking, and the one most published scenario packs do not: injects should target decisions rather than technical steps. Who authorizes a ransom payment, who decides to take the product offline, who calls the regulator and on what threshold, who tells the customer. The technical response is usually the part an organization is best at, and the decision path is where an exercise finds real gaps. A second position: the exercise's deliverable is the after-action list with owners and dates, so an exercise that produces a satisfied feeling and no assigned items did not happen.
-
-Open question before writing it: whether the after-action format is distinct enough from the postmortem's action-item table to justify its own document, or whether this should be a section of the postmortem template instead. Resolve that first, because writing it as a separate document and discovering it duplicates half of another one is the likelier failure than writing it badly.
+One candidate remains.
 
 ### Security metrics catalog
 
@@ -53,3 +47,4 @@ Items are annotated here when they ship, rather than deleted, so the reasoning s
 - **Materiality determination record** — shipped, [incident-response/](incident-response/README.md).
 - **Security exception and risk acceptance record** — shipped, [risk-management/](risk-management/README.md).
 - **Vendor risk tiering** — shipped, [third-party-risk/](third-party-risk/README.md).
+- **Tabletop exercise design and after-action** — shipped, [incident-response/](incident-response/README.md). The open question recorded here before writing was whether the after-action duplicated the postmortem enough to be a section of it instead. Resolved as a separate document: the two differ in whether the facts were discovered or authored, and half of the exercise document is design work that has no postmortem analogue, since reality does the design. What they share is the destination, so the after-action reuses the postmortem's action-item table verbatim rather than inventing a second format. One format, two documents, one backlog.

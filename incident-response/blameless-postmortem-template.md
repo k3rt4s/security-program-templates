@@ -140,6 +140,7 @@ A short list of terms used in the postmortem that an executive distribution may 
 - The realized risk is a row on the [risk register](../risk-management/risk-register-pattern.md). Name it. If there is no such row, that is a finding worth stating: the risk was never enumerated, and the register's coverage is the thing to fix.
 - Any active [exception](../risk-management/security-exception-record.md) over the failure path is named in the header and analysed in the causes section.
 - Material incidents, their detection paths, and the status of their action items appear in section 3 of the [quarterly board update](../board-reporting/quarterly-security-update-template.md). Brief the committee chair when the incident closes, not when the deck is assembled.
+- Action items of the "exercise this within 60 days" kind, like AI-03 above, land in the [tabletop exercise pattern](tabletop-exercise-pattern.md). That document deliberately reuses this action-item format, so exercise findings and incident findings enter one backlog on equal footing, which matters because findings from an event that did not really happen are the first to be deprioritized.
 
 ## Common failure modes
 

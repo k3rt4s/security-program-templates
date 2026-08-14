@@ -70,7 +70,7 @@ One slide per program area in scope, no more than 4 to 6 areas total. Suggested 
 - Detection and response
 - Data protection
 - AI governance, where the organization operates AI systems of consequence: inventory coverage from the [AI system register](../ai-governance/ai-system-register-pattern.md), how many agentic systems are live, and shutdown drill results
-- Resilience (BCP / DR)
+- Resilience (BCP / DR), including response readiness: which [tabletop scenario families](../incident-response/tabletop-exercise-pattern.md) have been exercised and who attended. Executive participation is the number worth showing a board, because unlike most security metrics it is one they can personally change
 
 Each slide:
 
@@ -144,6 +144,7 @@ This deck should be a view over artifacts the program already maintains, not a d
 | AI governance                             | [AI system register](../ai-governance/ai-system-register-pattern.md): discovery coverage, agentic count, drill results                                                                        |
 | Compliance and audit posture              | [Control mapping](../compliance/control-framework-mapping-pattern.md) and the audit finding backlog                                                                                           |
 | Third-party posture                       | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md): critical-tier count, review SLA, tier reductions achieved, and concentration across the critical tier                   |
+| Response readiness                        | [Tabletop exercises](../incident-response/tabletop-exercise-pattern.md) run this year: scenario families covered, executive participation, and findings still open                            |
 | Aged exceptions, and the asks behind them | [Exception register](../risk-management/security-exception-record.md), filtered to executive tier and to anything past a second renewal                                                       |
 
 If assembling the deck requires original research rather than a query across those artifacts, the deck is not the problem. The underlying instruments are not being maintained at the cadence the board's questions assume, and the quarterly scramble is the symptom.
