@@ -14,6 +14,7 @@ Markdown only. No code. Each document is opinionated about the things that most 
 - [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems and the contemporaneous record of a cybersecurity materiality determination.
 - [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception and risk acceptance record, covering risk statement format, a 5-point likelihood and impact rubric anchored to time and money…
 - [third-party-risk/](third-party-risk/README.md): Patterns for tiering third parties by what they can do to you rather than by what you pay them, and for scaling assessment depth, evidence review, and offboarding to that tier.
+- [FUTURE_FEATURES.md](FUTURE_FEATURES.md): Candidate documents for this repository, with the reason each is a candidate and the bar it would have to clear to be written.
 
 <!-- END CONTENTS -->
 
