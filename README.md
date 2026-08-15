@@ -2,7 +2,7 @@
 
 Working templates and patterns for the documents a security program needs to actually run: an inventory of what the business cannot lose, a risk register that says something useful, a record for every gap you decided to live with, an incident postmortem that produces shipped changes, an AI system register that survives its second quarter, and a board update that earns time on the agenda.
 
-Markdown only. No code. Each document is opinionated about the things that most organizations get wrong the first time they build one, and each ends with a short list of failure modes worth watching for.
+Markdown only. No code. The line above names a representative few; the full set is in Contents below. Each document is opinionated about the things that most organizations get wrong the first time they build one, and each ends with a short list of failure modes worth watching for.
 
 ## Contents
 
