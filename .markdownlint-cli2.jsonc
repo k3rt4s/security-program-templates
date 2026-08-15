@@ -1,0 +1,18 @@
+// Markdown lint configuration for security-program-templates.
+//
+// These documents are prose meant to be read and adapted, not source code.
+// They are written one sentence per line so that a diff shows which sentence
+// changed rather than reflowing a paragraph, and sentences here are long. Hard
+// wrapping at 80 characters would make every edit produce a paragraph-sized
+// diff and would break the wide reference tables the templates rely on, so the
+// line-length rule is off deliberately rather than by neglect.
+//
+// Everything else markdownlint checks is left on and is expected to pass.
+{
+  "config": {
+    "default": true,
+    "MD013": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**"]
+}
