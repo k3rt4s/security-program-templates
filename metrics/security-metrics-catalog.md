@@ -22,7 +22,7 @@ Question 2 is not cynicism about the team. Gaming is usually unintentional: a de
 
 Most security metrics are ratios, and most of them improve when the denominator shrinks. This is the single most common way a security dashboard becomes wrong while remaining accurate.
 
-Coverage percentages improve when scope narrows. Patch latency improves when the asset inventory quietly loses assets. Any "percent of in-scope X" improves when the definition of in-scope tightens. None of these require anyone to act in bad faith, and none of them are visible if only the ratio is reported.
+Coverage percentages improve when scope narrows. Patch latency improves when the asset inventory quietly loses assets. Crown-jewel control coverage improves when a capability drops off the [crown jewel inventory](../assets/crown-jewel-inventory-pattern.md). Any "percent of in-scope X" improves when the definition of in-scope tightens. None of these require anyone to act in bad faith, and none of them are visible if only the ratio is reported.
 
 The fix is cheap and almost nobody does it: publish the denominator next to the ratio, every time, and treat a change in the denominator as an event worth explaining. An MFA coverage figure that moved from 94 to 97 percent while the identity count fell by 1,200 is not an improvement, it is a question.
 

@@ -34,7 +34,7 @@ Examples of indicators that survive board scrutiny:
 | MFA coverage                   | Percent of in-scope identities with phishing-resistant MFA                | Leading |
 | Mean time to detect (MTTD)     | Median time from initial event to SOC alert, security incidents only      | Lagging |
 | Third-party risk-review SLA    | Percent of in-scope vendors reviewed within their cadence                 | Leading |
-| Crown-jewel control coverage   | Percent of named-asset controls passing most recent test                  | Leading |
+| Crown-jewel control coverage   | Percent of crown-jewel controls passing most recent test                  | Leading |
 | Aged security exceptions       | Count of exceptions past their second renewal, by approval tier           | Leading |
 | Agentic AI shutdown readiness  | Percent of agentic AI systems with a shutdown drilled in the last quarter | Leading |
 | Vendor tier reductions         | Count of vendors moved to a lower tier by narrowing their access          | Leading |
@@ -148,6 +148,7 @@ This deck should be a view over artifacts the program already maintains, not a d
 | Third-party posture                       | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md): critical-tier count, review SLA, tier reductions achieved, and concentration across the critical tier                   |
 | Response readiness                        | [Tabletop exercises](../incident-response/tabletop-exercise-pattern.md) run this year: scenario families covered, executive participation, and findings still open                            |
 | The indicator set itself                  | [Security metrics catalog](../metrics/security-metrics-catalog.md), selecting six to ten and carrying each one's denominator                                                                  |
+| What crown-jewel coverage counts against  | [Crown jewel inventory](../assets/crown-jewel-inventory-pattern.md), whose size is the denominator behind that indicator                                                                      |
 | Aged exceptions, and the asks behind them | [Exception register](../risk-management/security-exception-record.md), filtered to executive tier and to anything past a second renewal                                                       |
 
 If assembling the deck requires original research rather than a query across those artifacts, the deck is not the problem. The underlying instruments are not being maintained at the cadence the board's questions assume, and the quarterly scramble is the symptom.

@@ -99,4 +99,4 @@ The register is the spine of the program and most of its rows point somewhere el
 
 ## Minimum viable register
 
-If a register is brand new, start with 10 to 25 rows that cover the named-asset crown jewels and the top business-process dependencies. Resist the urge to fill it to 200 rows in the first quarter. A small register that is actually maintained beats a large register that is not.
+If a register is brand new, start with 10 to 25 rows that cover the crown jewels and the top business-process dependencies, taken from the [crown jewel inventory](../assets/crown-jewel-inventory-pattern.md) rather than assembled here. Building that list first is worth the two weeks it takes, because a register seeded from a workshop reflects who argued hardest rather than what the business cannot lose. Resist the urge to fill it to 200 rows in the first quarter. A small register that is actually maintained beats a large register that is not.

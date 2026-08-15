@@ -9,6 +9,7 @@ Markdown only. No code. Each document is opinionated about the things that most 
 <!-- BEGIN CONTENTS (auto-generated, do not edit by hand) -->
 
 - [ai-governance/](ai-governance/README.md): Patterns for the inventory of AI systems an organization actually runs, covering the use-case unit of registration, three classes of autonomy, discovery of unapproved tools, and the tested shutdown.
+- [assets/](assets/README.md): Patterns for enumerating the business capabilities an organization cannot lose, tracing each to what it depends on, and selecting by tolerable outage rather than by importance.
 - [board-reporting/](board-reporting/README.md): Templates for the quarterly security update delivered to a board or board committee, covering structure, indicators, and the discipline around what to ask from the board.
 - [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks with honest coverage qualifiers, and for the register of obligations that actually bind an organization.
 - [governance/](governance/README.md): Patterns for recording who holds each decision a security program depends on, separating the criteria for a decision from the assignment of it.
@@ -25,7 +26,9 @@ Markdown only. No code. Each document is opinionated about the things that most 
 
 The documents are individually useful and they are more useful as a set, because a security program is a loop rather than a shelf of artifacts. Each one hands something specific to the next.
 
-The [risk register](risk-management/risk-register-pattern.md) is the spine. It holds the things that could go wrong, scored honestly, with owners and treatment decisions.
+The [crown jewel inventory](assets/crown-jewel-inventory-pattern.md) comes first, because most of what follows is scoped against it. It enumerates the business capabilities the organization cannot lose, selected by tolerable outage rather than by importance, and traces each one down to the systems, data, and third parties it actually depends on.
+
+The [risk register](risk-management/risk-register-pattern.md) is the spine. It holds the things that could go wrong, scored honestly, with owners and treatment decisions, and it is seeded from that inventory rather than from a workshop.
 
 When a risk is treated by deliberately not meeting a requirement, the [exception record](risk-management/security-exception-record.md) documents the departure, the compensating controls, the approver, and the expiry. It is the operational other half of the register's Accept treatment, and it cites the register row by ID.
 
@@ -59,6 +62,7 @@ The thread that runs through the templates:
 
 | ID | Artifact | What it is |
 | -- | -------- | ---------- |
+| `CJ-003` | Crown jewel inventory | Issue and collect customer invoices. Its trace runs through the billing engine, the rate tables, a payment processor, and the identity provider fronting all of them. |
 | `OPS-014` | Risk register | Weak authentication on AccountView Classic, the legacy customer portal holding about 200,000 end-customer records. |
 | `EXC-2026-031` | Exception record | The waiver for phishing-resistant MFA on that portal's admin role, granted because the platform predates SAML support and the replacement ships in Q3. |
 | `SEC-2026-Q1-014` | Postmortem | March 2026: credential stuffing against that exact admin role. The risk materializing through the excepted gap. |

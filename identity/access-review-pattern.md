@@ -35,7 +35,7 @@ A campaign that covers every identity against every entitlement on an annual cyc
 Scope by what the access can do, using the same instinct as [vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md): not who holds it, not what it costs, but what it permits.
 
 - Standing privilege, meaning privilege held permanently rather than requested when needed.
-- Access to regulated data, customer data, or the crown-jewel systems already named on the [risk register](../risk-management/risk-register-pattern.md).
+- Access to regulated data, customer data, or the systems on a crown-jewel dependency trace in the [crown jewel inventory](../assets/crown-jewel-inventory-pattern.md).
 - Access that crosses an organizational boundary: contractors, vendors, partners, and anyone whose departure you would not hear about.
 - Non-human identities, covered below.
 - Anything granted through an emergency or break-glass path since the last campaign, regardless of what it grants.
@@ -95,7 +95,7 @@ Two supporting numbers worth keeping: the revocation rate, because a campaign th
 
 ## Where this connects
 
-- Populations to review come from the crown-jewel systems named on the [risk register](../risk-management/risk-register-pattern.md). Access nobody is willing to review is a risk row.
+- Populations to review come from the dependency traces in the [crown jewel inventory](../assets/crown-jewel-inventory-pattern.md), which is also where the shared infrastructure nobody thinks of as business-critical shows up. Access nobody is willing to review is a row on the [risk register](../risk-management/risk-register-pattern.md).
 - A keep decision that overrides the review's finding is an [exception record](../risk-management/security-exception-record.md) with an expiry and a named approver, not a comment field. Who may make that override, and who may disable an unowned credential, are rows in the [decision rights register](../governance/decision-rights-register.md); this document says which reviewer is capable of judging a population, which is a separate question from who is authorized to overrule them.
 - Non-human identities used by agentic systems are registered in the [AI system register](../ai-governance/ai-system-register-pattern.md), and this campaign is where their scope gets read back and verified against what was intended.
 - Third-party accounts reviewed here are the same accounts the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md) expects to be revoked at offboarding. A campaign that finds live credentials for a terminated vendor is reporting an offboarding failure, and that is where the fix belongs.
