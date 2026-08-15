@@ -149,6 +149,7 @@ This deck should be a view over artifacts the program already maintains, not a d
 | Response readiness                        | [Tabletop exercises](../incident-response/tabletop-exercise-pattern.md) run this year: scenario families covered, executive participation, and findings still open                            |
 | The indicator set itself                  | [Security metrics catalog](../metrics/security-metrics-catalog.md), selecting six to ten and carrying each one's denominator                                                                  |
 | What crown-jewel coverage counts against  | [Crown jewel inventory](../assets/crown-jewel-inventory-pattern.md), whose size is the denominator behind that indicator                                                                      |
+| Remediation posture                       | [Exposure prioritization](../vulnerability-management/exposure-prioritization-pattern.md): finding arrival against closure, reported as a pair, and classes eliminated                        |
 | Aged exceptions, and the asks behind them | [Exception register](../risk-management/security-exception-record.md), filtered to executive tier and to anything past a second renewal                                                       |
 
 If assembling the deck requires original research rather than a query across those artifacts, the deck is not the problem. The underlying instruments are not being maintained at the cadence the board's questions assume, and the quarterly scramble is the symptom.

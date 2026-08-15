@@ -1,6 +1,6 @@
 # security-program-templates
 
-Working templates and patterns for the documents a security program needs to actually run: a risk register that says something useful, a board update that earns time on the agenda, an incident postmortem that produces shipped changes, an AI system register that survives its second quarter, a vendor tiering pattern that puts the effort where the exposure is, and a control mapping that auditors trust.
+Working templates and patterns for the documents a security program needs to actually run: an inventory of what the business cannot lose, a risk register that says something useful, a record for every gap you decided to live with, an incident postmortem that produces shipped changes, an AI system register that survives its second quarter, and a board update that earns time on the agenda.
 
 Markdown only. No code. Each document is opinionated about the things that most organizations get wrong the first time they build one, and each ends with a short list of failure modes worth watching for.
 
@@ -54,7 +54,7 @@ Where remediation work exceeds capacity, which is the normal condition, [exposur
 
 Running underneath all of it, the [metrics catalog](metrics/security-metrics-catalog.md) is where the numbers these artifacts produce get chosen, each one recorded with how it can be made to look good without anything improving and what it stays silent about.
 
-The [quarterly board update](board-reporting/quarterly-security-update-template.md) is where the loop surfaces: top risks from the register, exceptions past their second renewal, material incidents and their determinations, AI inventory coverage, third-party posture, and audit posture from the mapping. The board update is a view over the other artifacts, not a document written from scratch each quarter. When it has to be written from scratch, that is the diagnostic.
+The [quarterly board update](board-reporting/quarterly-security-update-template.md) is where the loop surfaces: top risks from the register, exceptions past their second renewal, material incidents and their determinations, AI inventory coverage, third-party posture, response readiness from the exercises, remediation arrival against closure, and audit posture from the mapping. It carries a table naming which artifact feeds each of its sections. The board update is a view over the other artifacts, not a document written from scratch each quarter. When it has to be written from scratch, that is the diagnostic.
 
 ## The worked example
 
@@ -77,6 +77,8 @@ The thread that runs through the templates:
 | `AR-2026-Q2` | Access review campaign | Standing privileged roles and non-human identities in production. It is where the observability vendor's service account gets its permissions read back for the first time. |
 | `REG-018` | Regulatory applicability register | The 72-hour data protection notification duty, one row among several, sitting behind the tighter contractual clock that the materiality record warns about. |
 | `DR-014` | Decision rights register | Authority to take the customer portal offline. It sits beside the row that was empty until the exercise found it: revoking a vendor's production credential. |
+| `VM-2026-Q2` | Exposure prioritization | The quarter's cut line. Findings arrive faster than they close, so the line is where the backlog stops being worked and starts being decided about. |
+| `CAP-v4` | Customer assurance package | The answer set in circulation. Version 3 claimed the MFA control that `EXC-2026-031` waives, which is the reconciliation almost nobody runs. |
 
 The [metrics catalog](metrics/security-metrics-catalog.md) has no row here on purpose. It is a reference the others draw from rather than an artifact an organization produces one instance of, so it has nothing to carry an Ambervale identifier.
 
@@ -92,7 +94,9 @@ One housekeeping note for anyone reading the source: the `CONTENTS` blocks in th
 
 These are templates and patterns. They are not policies, not standards, not control libraries, not legal advice, and not a security program in a box. They are the shape of the artifacts a security program produces, and the judgment lives in how they get filled in for a specific context.
 
-Their provenance differs, and it is worth being straight about which is which. The risk register, exception record, postmortem, board update, vendor tiering pattern, and control mapping are long-established artifacts, and what is opinionated about them is distilled from running them in real organizations and watching what works and what does not. The AI system register and the materiality determination record describe practices that are still forming: the disclosure obligation they answer to is recent, and almost nobody has a decade of watching an AI inventory succeed or fail. Those two are reasoned from current practice, current regulatory expectations, and the failure patterns visible so far, and they should be read as a considered starting position rather than as settled practice.
+Their provenance differs, and it is worth being straight about which is which. Most are long-established artifacts that organizations have been producing for decades, and what is opinionated about them is distilled from running them and watching what works and what does not.
+
+Three are not, and they are named rather than left for the reader to work out. The **AI system register** and the **materiality determination record** describe practices that are still forming: the disclosure obligation the second answers to is recent, and almost nobody has a decade of watching an AI inventory succeed or fail. The **decision rights register** rests on an old idea, but it is rarely maintained as a standalone artifact, so its specific shape here is a proposal rather than a description of common practice. All three are reasoned from current practice, current regulatory expectations, and the failure patterns visible so far. Read them as a considered starting position, and expect them to age faster than the rest.
 
 ## License
 
