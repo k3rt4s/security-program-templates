@@ -114,7 +114,7 @@ Publish a short list of requirements that are not available for exception, and k
 
 The test for the list is not severity, it is whether granting the exception would make something else the organization has said untrue. A control that a customer contract commits to, a control named in a regulatory filing or an audit assertion, and a control claimed in a completed customer security questionnaire are all in that category: the exception does not just carry risk, it makes an existing statement false, and that is a legal question rather than a risk question. Route those to counsel instead of to the exception process.
 
-Knowing which controls are in that category requires knowing what the organization has committed to, which is not something to reconstruct while an exception request is waiting. The contractual and voluntary rows of the [regulatory applicability register](../compliance/regulatory-applicability-register.md) are that list.
+Knowing which controls are in that category requires knowing what the organization has committed to, which is not something to reconstruct while an exception request is waiting. The contractual and voluntary rows of the [regulatory applicability register](../compliance/regulatory-applicability-register.md) are that list, and most of those commitments are created in the [customer assurance package](../customer-assurance/assurance-package-pattern.md), usually faster than this process can absorb them. Reconciling the exception register against that package is a short exercise that almost nobody runs and that finds real conflicts.
 
 Everything else should be exceptable in principle. A non-exceptable list that runs long gets routed around rather than obeyed, and undocumented gaps are strictly worse than documented ones.
 

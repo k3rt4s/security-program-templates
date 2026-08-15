@@ -12,12 +12,14 @@ Markdown only. No code. Each document is opinionated about the things that most 
 - [assets/](assets/README.md): Patterns for enumerating the business capabilities an organization cannot lose, tracing each to what it depends on, and selecting by tolerable outage rather than by importance.
 - [board-reporting/](board-reporting/README.md): Templates for the quarterly security update delivered to a board or board committee, covering structure, indicators, and the discipline around what to ask from the board.
 - [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks with honest coverage qualifiers, and for the register of obligations that actually bind an organization.
+- [customer-assurance/](customer-assurance/README.md): Patterns for the security material given to prospective customers, treating every answer as a binding commitment that constrains the exception process rather than as a sales statement.
 - [governance/](governance/README.md): Patterns for recording who holds each decision a security program depends on, separating the criteria for a decision from the assignment of it.
 - [identity/](identity/README.md): Patterns for access review and entitlement certification, covering who can actually judge an entitlement and why revocation rather than decision is the deliverable.
 - [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems, tabletop exercise design and after-action, and the contemporaneous record of a cybersecurity materiality determination.
 - [metrics/](metrics/README.md): Patterns for choosing security metrics that change decisions, with each metric's gaming mode and blind spot recorded alongside its definition.
 - [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception record, covering risk statement format, a likelihood and impact rubric anchored to time and money, and the bar for an Accept.
 - [third-party-risk/](third-party-risk/README.md): Patterns for tiering third parties by what they can do to you rather than by what you pay them, and for scaling assessment depth, evidence review, and offboarding to that tier.
+- [vulnerability-management/](vulnerability-management/README.md): Patterns for ordering remediation work when the backlog structurally exceeds capacity, covering the arrival-versus-closure arithmetic, exposure-based ordering, and what to do with the tail.
 - [FUTURE_FEATURES.md](FUTURE_FEATURES.md): Candidate documents for this repository, with the reason each is a candidate and the bar it would have to clear to be written.
 
 <!-- END CONTENTS -->
@@ -47,6 +49,8 @@ The [access review pattern](identity/access-review-pattern.md) covers who can do
 The [regulatory applicability register](compliance/regulatory-applicability-register.md) records the duties that actually bind the organization, one row per duty rather than per regulation, drawn from statute, contract, and public commitment alike. It is what the materiality record assumes exists when it tells you to list every clock. The [control mapping](compliance/control-framework-mapping-pattern.md) then makes one set of evidence serve several frameworks, so the program is not tested five times for the same control.
 
 Every document above defines criteria for at least one decision: what constitutes it and at what threshold it escalates. None of them says who holds it, on purpose. That is the [decision rights register](governance/decision-rights-register.md), which carries the assignment for the whole set, and its real job is making the empty rows visible, because an authority nobody holds is an absence and absences cannot be seen from inside any single document.
+
+Where remediation work exceeds capacity, which is the normal condition, [exposure prioritization](vulnerability-management/exposure-prioritization-pattern.md) decides the order and, more importantly, what happens to the part you will not reach. The [customer assurance package](customer-assurance/assurance-package-pattern.md) is the outward-facing end of the same set, and it belongs here rather than in a sales folder because every answer it gives is a commitment that constrains the exception process afterwards.
 
 Running underneath all of it, the [metrics catalog](metrics/security-metrics-catalog.md) is where the numbers these artifacts produce get chosen, each one recorded with how it can be made to look good without anything improving and what it stays silent about.
 

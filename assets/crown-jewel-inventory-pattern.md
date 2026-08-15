@@ -58,7 +58,7 @@ A survey of system owners returns everything, weighted by how strongly each owne
 - **Incident history.** What has actually caused business impact in the last two years. Reality has a shorter list than any workshop.
 - **The escalation test.** What would cause someone to call the chief executive at the weekend. Crude, fast, and surprisingly accurate.
 
-Run one negative sweep as well. Anything tagged production in the configuration database that no capability trace claims is either an undiscovered dependency or a decommissioning candidate, and both are worth knowing. That sweep is usually where the unlisted shared infrastructure surfaces.
+Run one negative sweep as well. Anything tagged production in the configuration database that no capability trace claims is either an undiscovered dependency or a decommissioning candidate, and both are worth knowing. That sweep is usually where the unlisted shared infrastructure surfaces, and the decommissioning half is the cheapest lever in [exposure prioritization](../vulnerability-management/exposure-prioritization-pattern.md), since findings are counted per asset and removing the asset removes them permanently.
 
 ## Columns
 
