@@ -83,6 +83,8 @@ Tier approval to the residual risk the exception leaves behind, scored on the sa
 | 10 to 15       | Executive owning the accountable function                                      | 6 months         | 2             |
 | 16 to 25       | Executive plus written notification to the board committee at the next meeting | 3 months         | 1             |
 
+The tiers above are criteria: they say which level of authority a given residual score requires. Who occupies each tier is an assignment, and it belongs in the [decision rights register](../governance/decision-rights-register.md) rather than being written into this table, because a name recorded here goes stale silently when the person changes roles.
+
 The approver is the person who owns the consequence, not the person who owns the system. An engineering leader approving an exception whose realized cost lands on the finance or legal function is the structural failure that makes an exception register meaningless. Security reviews and records; security does not approve its own waivers, because an exception approved by security is a security decision rather than a business one, and the entire point of the instrument is to put the decision where the consequence lands.
 
 ## Expiry, and what happens at it

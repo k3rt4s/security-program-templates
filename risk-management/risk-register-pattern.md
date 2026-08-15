@@ -87,6 +87,7 @@ The register is the spine of the program and most of its rows point somewhere el
 - A [tabletop exercise](../incident-response/tabletop-exercise-pattern.md) finding that will not be remediated is a row here, or an exception if it means a stated requirement is knowingly unmet. Findings from a simulated event are the ones most likely to be filed and forgotten, and the register is where they stop being optional.
 - Risks about AI systems are written here in the standard form and cite the relevant row on the [AI system register](../ai-governance/ai-system-register-pattern.md). The AI register inventories; this register scores.
 - Third parties are tiered by exposure in the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md), and a specific vendor failure is a row here like any other. Concentration across the critical tier, several vendors sharing one region or one identity provider, is a separate row that has no natural owner and will go unwritten unless the program claims it.
+- This register says an Accept requires named-executive sign-off. Which executive, for which tier, is an assignment and lives in the [decision rights register](../governance/decision-rights-register.md). Concentration of critical decisions in one person is itself a row here, and it is one no individual decision would ever surface.
 
 ## Common failure modes
 

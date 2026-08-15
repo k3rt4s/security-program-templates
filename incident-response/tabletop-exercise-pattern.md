@@ -30,6 +30,8 @@ Decisions worth testing, most of which no runbook answers:
 
 Notice how few of these belong to the security team. That is the finding most exercises are built to avoid.
 
+Each of these should already have a named holder and a named delegate in the [decision rights register](../governance/decision-rights-register.md). Where one does not, you have found the gap before designing the scenario, which is cheaper. Where one does, the exercise is testing something better than whether the authority exists: whether the holder knew they held it, was reachable, and used it.
+
 ## Injects target decisions, not technical steps
 
 The technical response is usually the part an organization is best at, because it is the part that gets practiced incidentally every time something breaks. Writing injects about which log to check produces an exercise where the responders perform well and nothing is learned.

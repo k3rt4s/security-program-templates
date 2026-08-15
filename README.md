@@ -11,6 +11,7 @@ Markdown only. No code. Each document is opinionated about the things that most 
 - [ai-governance/](ai-governance/README.md): Patterns for the inventory of AI systems an organization actually runs, covering the use-case unit of registration, three classes of autonomy, discovery of unapproved tools, and the tested shutdown.
 - [board-reporting/](board-reporting/README.md): Templates for the quarterly security update delivered to a board or board committee, covering structure, indicators, and the discipline around what to ask from the board.
 - [compliance/](compliance/README.md): Patterns for mapping security controls across multiple frameworks with honest coverage qualifiers, and for the register of obligations that actually bind an organization.
+- [governance/](governance/README.md): Patterns for recording who holds each decision a security program depends on, separating the criteria for a decision from the assignment of it.
 - [identity/](identity/README.md): Patterns for access review and entitlement certification, covering who can actually judge an entitlement and why revocation rather than decision is the deliverable.
 - [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems, tabletop exercise design and after-action, and the contemporaneous record of a cybersecurity materiality determination.
 - [metrics/](metrics/README.md): Patterns for choosing security metrics that change decisions, with each metric's gaming mode and blind spot recorded alongside its definition.
@@ -42,6 +43,8 @@ The [access review pattern](identity/access-review-pattern.md) covers who can do
 
 The [regulatory applicability register](compliance/regulatory-applicability-register.md) records the duties that actually bind the organization, one row per duty rather than per regulation, drawn from statute, contract, and public commitment alike. It is what the materiality record assumes exists when it tells you to list every clock. The [control mapping](compliance/control-framework-mapping-pattern.md) then makes one set of evidence serve several frameworks, so the program is not tested five times for the same control.
 
+Every document above defines criteria for at least one decision: what constitutes it and at what threshold it escalates. None of them says who holds it, on purpose. That is the [decision rights register](governance/decision-rights-register.md), which carries the assignment for the whole set, and its real job is making the empty rows visible, because an authority nobody holds is an absence and absences cannot be seen from inside any single document.
+
 Running underneath all of it, the [metrics catalog](metrics/security-metrics-catalog.md) is where the numbers these artifacts produce get chosen, each one recorded with how it can be made to look good without anything improving and what it stays silent about.
 
 The [quarterly board update](board-reporting/quarterly-security-update-template.md) is where the loop surfaces: top risks from the register, exceptions past their second renewal, material incidents and their determinations, AI inventory coverage, third-party posture, and audit posture from the mapping. The board update is a view over the other artifacts, not a document written from scratch each quarter. When it has to be written from scratch, that is the diagnostic.
@@ -65,6 +68,7 @@ The thread that runs through the templates:
 | `TTX-2026-02` | Tabletop after-action | The exercise that postmortem action item AI-03 called for, run as a third-party compromise scenario. Two of its three forced decisions stalled on authority nobody in the room held. |
 | `AR-2026-Q2` | Access review campaign | Standing privileged roles and non-human identities in production. It is where the observability vendor's service account gets its permissions read back for the first time. |
 | `REG-018` | Regulatory applicability register | The 72-hour data protection notification duty, one row among several, sitting behind the tighter contractual clock that the materiality record warns about. |
+| `DR-014` | Decision rights register | Authority to take the customer portal offline. It sits beside the row that was empty until the exercise found it: revoking a vendor's production credential. |
 
 The [metrics catalog](metrics/security-metrics-catalog.md) has no row here on purpose. It is a reference the others draw from rather than an artifact an organization produces one instance of, so it has nothing to carry an Ambervale identifier.
 

@@ -101,6 +101,7 @@ Each watchlist entry carries the expected application date, the applicability ba
 - Obligations map to controls in the [control framework mapping](control-framework-mapping-pattern.md), and the evidence column here should reference the same evidence items rather than creating a parallel set.
 - Contractual obligations arrive with vendors and customers, so the register's contractual rows and the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md) draw on the same agreements. A vendor acquisition is a reassessment trigger there and a re-derivation trigger here.
 - Failure to meet an obligation is a risk on the [risk register](../risk-management/risk-register-pattern.md), written in the standard form. The register of duties is not a risk list.
+- The owner column here names who is accountable for a duty. Who is authorized to make the notification, and their delegate, is a decision right and lives in the [decision rights register](../governance/decision-rights-register.md). On a 24-hour clock those are not the same question and cannot share one name.
 - Exercise the tightest clocks in a [tabletop](../incident-response/tabletop-exercise-pattern.md). A 24-hour contractual notification duty that has never been rehearsed is a duty in a spreadsheet.
 
 ## Common failure modes

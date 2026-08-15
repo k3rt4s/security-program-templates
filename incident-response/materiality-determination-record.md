@@ -29,6 +29,8 @@ Security does not determine materiality. This is the single most important struc
 
 An organization without a standing disclosure committee should name the participants in advance rather than assembling them during an incident. The composition is not an incident-time decision, and assembling it under pressure is how a determination slips past "without unreasonable delay".
 
+The table above describes the roles. The named people who hold them, and who convenes the committee, belong in the [decision rights register](../governance/decision-rights-register.md), along with the delegate for each, since an incident does not wait for the primary holder to land.
+
 ## The two clocks, and the one everyone gets wrong
 
 For an SEC registrant, the obligation is to file within four business days of determining that an incident is material, and to make that determination without unreasonable delay after discovery. Those are two separate clocks and only the second one starts automatically.
