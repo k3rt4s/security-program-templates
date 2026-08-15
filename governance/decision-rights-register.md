@@ -12,7 +12,11 @@ The **criteria** for a decision are what constitutes it, at what threshold it es
 
 The **assignment** is which named person holds the authority. That is an organizational fact rather than a domain one. It changes when people change, it has to be consistent across domains, and it is the half that has to be visible in one place.
 
-One rule makes the split hold rather than creating two sources of truth: a domain document states criteria and points here for the holder. It never names the holder in place. A role name written into a table in a domain document goes stale silently, because nothing prompts anyone to revisit it when the person leaves.
+One rule makes the split hold rather than creating two sources of truth: a domain document states the criteria for a class of decision and points here for who may make it. It does not carry its own table of standing authorities, because a role name written into a document goes stale silently when the person leaves and nothing prompts anyone to revisit it.
+
+That rule is about standing authority, and it does not touch per-instance ownership, which is a different thing and belongs exactly where it already is. The owner of a specific risk row, the accountable owner of a specific AI system, and the owner of a specific regulatory duty are all properties of that instance, they are named in that record, and they change when the instance changes rather than when the organization does. This register holds the authority that applies across every instance of a class: who may accept a risk at a given residual tier, who may stop any AI system, who may authorize a notification against any duty.
+
+The distinction is worth stating in whatever policy governs the register, because getting it backwards produces the two failure modes at once. Pulling per-instance owners into here makes it a stale copy of five inventories. Leaving standing authority in the domain documents makes the gaps invisible, which is the problem this exists to solve.
 
 ## What this is, and what it is not
 
@@ -116,7 +120,8 @@ The register is a table; the value comes from reading it three ways.
 2. **No delegate.** One holder per decision documents a single point of failure rather than removing one.
 3. **Assignment without confirmation.** The holder was never told. Record the acknowledgment date, not the assignment date.
 4. **Restating criteria.** The register grows into a summary of every other document, drifts from all of them, and becomes the version nobody trusts. Point, do not copy.
-5. **Job descriptions as rows.** "Responsible for information security" cannot be found to be missing, so it never is.
-6. **Built once.** Assignment goes wrong at departures and reorganizations, so tie the vacancy view to the leaver process rather than to an annual cycle.
-7. **Blanks left as blanks.** An unassignable decision is treated as an incomplete document. It is an unmade organizational decision, and it should be raised rather than formatted around.
-8. **Turned into a RACI.** Three of the four columns do not bind, and the effort goes into them.
+5. **Absorbing per-instance owners.** Risk row owners, AI system owners, and duty owners are pulled in here and the register becomes a stale copy of five inventories. It holds standing authority over a class, not ownership of an instance.
+6. **Job descriptions as rows.** "Responsible for information security" cannot be found to be missing, so it never is.
+7. **Built once.** Assignment goes wrong at departures and reorganizations, so tie the vacancy view to the leaver process rather than to an annual cycle.
+8. **Blanks left as blanks.** An unassignable decision is treated as an incomplete document. It is an unmade organizational decision, and it should be raised rather than formatted around.
+9. **Turned into a RACI.** Three of the four columns do not bind, and the effort goes into them.
