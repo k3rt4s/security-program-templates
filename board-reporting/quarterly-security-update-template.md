@@ -20,24 +20,24 @@ The executive summary is the page that gets forwarded. Write it last, after the 
 
 A small dashboard, no more than 6 to 10 indicators, mixing leading and lagging measures. Avoid vanity metrics ("number of emails scanned"). Each indicator has:
 
-- A definition that fits on one line.
+- A definition that fits on one line, and that names its denominator. "Percent of crown-jewel capabilities whose required controls all passed" is decidable; "crown-jewel control coverage" alone is a label that two people will compute differently.
 - A current value and the value from the prior two quarters, so trend is visible.
 - A target or threshold, and a color (green / yellow / red) tied to that threshold, not to gut feel.
 - An owner.
 
 Examples of indicators that survive board scrutiny:
 
-| Indicator                      | Definition                                                                | Type    |
-| ------------------------------ | ------------------------------------------------------------------------- | ------- |
-| Critical patch latency         | Days from vendor release to 95% deployment for severity-critical patches  | Lagging |
-| Phishing simulation click rate | Percent of simulated phishing emails clicked, by population               | Leading |
-| MFA coverage                   | Percent of in-scope identities with phishing-resistant MFA                | Leading |
-| Mean time to detect (MTTD)     | Median time from initial event to SOC alert, security incidents only      | Lagging |
-| Third-party risk-review SLA    | Percent of in-scope vendors reviewed within their cadence                 | Leading |
-| Crown-jewel control coverage   | Percent of crown-jewel controls passing most recent test                  | Leading |
-| Aged security exceptions       | Count of exceptions past their second renewal, by approval tier           | Leading |
-| Agentic AI shutdown readiness  | Percent of agentic AI systems with a shutdown drilled in the last quarter | Leading |
-| Vendor tier reductions         | Count of vendors moved to a lower tier by narrowing their access          | Leading |
+| Indicator                      | Definition                                                                              | Type    |
+| ------------------------------ | --------------------------------------------------------------------------------------- | ------- |
+| Critical patch latency         | Days from vendor release to 95% deployment for severity-critical patches                | Lagging |
+| Phishing simulation click rate | Percent of simulated phishing emails clicked, by population                             | Leading |
+| MFA coverage                   | Percent of in-scope identities with phishing-resistant MFA                              | Leading |
+| Mean time to detect (MTTD)     | Median time from initial event to SOC alert, security incidents only                    | Lagging |
+| Third-party risk-review SLA    | Percent of in-scope vendors reviewed within their cadence                               | Leading |
+| Crown-jewel control coverage   | Percent of crown-jewel capabilities whose required controls all passed most recent test | Leading |
+| Aged security exceptions       | Count of exceptions past their second renewal, by approval tier                         | Leading |
+| Agentic AI shutdown readiness  | Percent of agentic AI systems with a shutdown drilled in the last quarter               | Leading |
+| Vendor tier reductions         | Count of vendors moved to a lower tier by narrowing their access                        | Leading |
 
 Indicators that look like security work but rarely belong on a board deck: number of vulnerabilities, number of blocked emails, number of EDR alerts. Volume is not signal.
 
