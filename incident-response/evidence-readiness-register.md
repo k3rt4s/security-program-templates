@@ -53,7 +53,7 @@ One qualifier worth writing into the row rather than assuming: a source is compl
 
 The consequential thing about missing evidence is that it does not leave the question open. It decides it against you.
 
-Many US state breach statutes define a reportable breach in terms of unauthorized access to personal information that could reasonably result in harm to the individual. Where unauthorized access is established and scope is not, the prudent legal posture is generally to assume harm rather than to rely on an absence of evidence, because absence of evidence is not evidence of absence and no regulator is obliged to read it as one. The missing log therefore does not save a notification, it enlarges one, from the population that was demonstrably reached to the population that could have been.
+Many US state breach statutes define a reportable breach in terms of unauthorized access to personal information that could reasonably result in harm to the individual. Where unauthorized access is established and scope is not, counsel will commonly advise proceeding on the assumption of harm rather than resting on an absence of evidence, because absence of evidence is not evidence of absence and no regulator is obliged to read it as one. The threshold, the presumption, and how much unrebutted uncertainty is tolerable all vary by jurisdiction and by the duty in question, so the position here is the shape of the argument rather than the answer, and the answer is counsel's against the rows in your own regulatory register. The missing log therefore does not save a notification, it enlarges one, from the population that was demonstrably reached to the population that could have been.
 
 In the worked incident that is the distance between 3,180 records and roughly 200,000. Notification cost, credit monitoring, and the litigation exposure that follows a six-figure notification exceed the retention line item by orders of magnitude, and the comparison comes out the same way nearly every time it is made.
 
@@ -110,6 +110,8 @@ Two columns carry the weight, and neither is retention. Collection right, becaus
 ## Worked rows
 
 Ambervale, scoped to `CJ-003`, issue and collect customer invoices, and read against the March 2026 incident.
+
+Seven of the eleven columns, shown at the width a page will hold. Capability served is constant across this extract and comes from the section heading. Coverage confidence and the two owner columns are dropped here for space and are not optional in a real register, since a row with no reachable preservation owner cannot be executed against and a retention window with no coverage claim behind it is the assertion the last failure mode warns about.
 
 | ID      | Source                                   | Question answered                     | Retention                  | Collection right                       | Lead time                | Last retrieval test |
 | ------- | ---------------------------------------- | ------------------------------------- | -------------------------- | -------------------------------------- | ------------------------ | ------------------- |
