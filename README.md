@@ -15,7 +15,7 @@ Markdown only. No code. The line above names a representative few; the full set 
 - [customer-assurance/](customer-assurance/README.md): Patterns for the security material given to prospective customers, treating every answer as a binding commitment that constrains the exception process rather than as a sales statement.
 - [governance/](governance/README.md): Patterns for recording who holds each decision a security program depends on, separating the criteria for a decision from the assignment of it.
 - [identity/](identity/README.md): Patterns for access review and entitlement certification, covering who can actually judge an entitlement and why revocation rather than decision is the deliverable.
-- [incident-response/](incident-response/README.md): Templates for blameless security incident postmortems, tabletop exercise design and after-action, and the contemporaneous record of a cybersecurity materiality determination.
+- [incident-response/](incident-response/README.md): Templates for blameless incident postmortems, tabletop design and after-action, the standing record of what an incident could be reconstructed from, and the materiality determination record.
 - [metrics/](metrics/README.md): Patterns for choosing security metrics that change decisions, with each metric's gaming mode and blind spot recorded alongside its definition.
 - [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception record, covering risk statement format, a likelihood and impact rubric anchored to time and money, and the bar for an Accept.
 - [third-party-risk/](third-party-risk/README.md): Patterns for tiering third parties by what they can do to you rather than by what you pay them, and for scaling assessment depth, evidence review, and offboarding to that tier.
@@ -37,6 +37,8 @@ When a risk is treated by deliberately not meeting a requirement, the [exception
 When something goes wrong, the [postmortem](incident-response/blameless-postmortem-template.md) establishes what happened and what changes. If an exception covered the failure path, the postmortem says so, and that is the strongest available evidence at the exception's next renewal review.
 
 Before something goes wrong, the [tabletop exercise pattern](incident-response/tabletop-exercise-pattern.md) is how the response gets examined without waiting for an incident to do the examining. It shares the postmortem's action-item format on purpose, so exercise findings and incident findings compete in one backlog rather than in two.
+
+Both of those, and everything below them, assume the facts can be established. The [evidence readiness register](incident-response/evidence-readiness-register.md) is the standing record of what could actually be proven: which sources answer which incident question, over what window, obtainable from whom and how fast. It is scoped by the crown jewel inventory and it is read forward into the materiality determination, where the difference between a bounded population and an unbounded one is usually a retention setting chosen years earlier for reasons of storage cost.
 
 In parallel and on a different clock, the [materiality determination record](incident-response/materiality-determination-record.md) captures whether the incident was material and how that was decided. Different question, different owner, different audience from the postmortem.
 
@@ -70,6 +72,7 @@ The thread that runs through the templates:
 | `OPS-014` | Risk register | Weak authentication on AccountView Classic, the legacy customer portal holding about 200,000 end-customer records. |
 | `EXC-2026-031` | Exception record | The waiver for phishing-resistant MFA on that portal's admin role, granted because the platform predates SAML support and the replacement ships in Q3. |
 | `SEC-2026-Q1-014` | Postmortem | March 2026: credential stuffing against that exact admin role. The risk materializing through the excepted gap. |
+| `EV-07` | Evidence readiness register | The AccountView Classic query audit log, the only source that yields a record-level count, retained for fourteen days. It produced the 3,180 figure with twelve days to spare, and its last retrieval test was four months old. |
 | `MAT-2026-03` | Materiality record | The determination on that incident, concluded not material at confirmed scope, with the reassessment triggers named. |
 | `AI-007`, `AI-012` | AI system register | A support-ticket drafting assistant and a billing-dispute agent that can issue account credits. Same vendor, same model, two very different rows. |
 | `TP-041` | Vendor tiering | An observability vendor at four figures a month holding a write-scoped token into production. Tier 4, and roughly a hundredth the spend of the facilities contract sitting in Tier 1. |

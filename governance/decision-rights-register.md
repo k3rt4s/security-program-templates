@@ -84,6 +84,9 @@ The decisions the rest of this repository already implies, with the document tha
 | Convene the disclosure committee                   | [Materiality determination record](../incident-response/materiality-determination-record.md) |
 | Determine that an incident is material             | [Materiality determination record](../incident-response/materiality-determination-record.md) |
 | Declare an incident and set its severity           | [Postmortem](../incident-response/blameless-postmortem-template.md)                          |
+| Trigger evidence preservation across named sources | [Evidence readiness register](../incident-response/evidence-readiness-register.md)           |
+| Attach a legal hold                                | [Evidence readiness register](../incident-response/evidence-readiness-register.md)           |
+| Engage outside counsel on an incident              | [Evidence readiness register](../incident-response/evidence-readiness-register.md)           |
 | Take a revenue-generating product offline          | [Tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md)               |
 | Authorize a ransom payment                         | [Tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md)               |
 | Notify a regulator, per obligation                 | [Regulatory applicability register](../compliance/regulatory-applicability-register.md)      |

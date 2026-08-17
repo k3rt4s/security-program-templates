@@ -139,6 +139,7 @@ The record is a sensitive document about a sensitive event, and the template is 
 
 ## Relationship to the other artifacts
 
+- Every Confirmed and every Ruled out in the facts ledger traces to a source in the [evidence readiness register](evidence-readiness-register.md), and so does every Unknown that will stay unknown because the evidence was not retained or cannot be obtained. Mark that second kind explicitly rather than leaving it to read as forensics still in progress, since the two are different facts about the determination and only one of them resolves.
 - The [postmortem](blameless-postmortem-template.md) is a separate document with a separate purpose. It may cite this record and must not replace it. Where an active [exception](../risk-management/security-exception-record.md) covered the access path, both documents say so.
 - The determination process, its participants, and the count of incidents that entered it belong in the [quarterly board update](../board-reporting/quarterly-security-update-template.md). Governance of the disclosure process is a standing board interest independent of any single incident.
 - Where the incident involved an AI system, the relevant row from the [AI system register](../ai-governance/ai-system-register-pattern.md) supplies the ownership, action scope, and reversibility facts the committee will ask for.
