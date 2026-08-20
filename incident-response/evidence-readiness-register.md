@@ -87,7 +87,7 @@ At the point an incident is a true positive rather than a suspicion, three engag
 2. **The cyber insurance carrier.** Notification is typically a condition of coverage, and most policies constrain which counsel and which forensic providers may be retained. Retaining your own before the carrier is engaged is how an organization pays for an investigation it was insured for.
 3. **The forensic provider**, engaged by counsel rather than by you.
 
-The order is the entire content. What belongs in this document is only that these three decisions have named holders and named delegates before the incident, and that the criteria for them, meaning what counts as a true positive, are written down where the responders will look. The contact list, the policy numbers, and the engagement letters belong in the incident-response plan and in the carrier's own material, not here. This repository holds no plans.
+The order is the entire content. What belongs in this document is only that these three decisions have named holders and named delegates before the incident, and that the criteria for them, meaning what counts as a true positive, are written down where the responders will look. The contact list, the policy numbers, and the engagement letters belong in the incident-response plan and in the carrier's own material, not here. This repository holds no plans. And the privilege reasoning above is the general shape of why the order exists rather than a statement of what protects you: how far privilege extends over an investigation varies by jurisdiction and has been litigated more than once, so the sequence is worth agreeing with your own counsel and your own carrier before an incident rather than reading off a template during one.
 
 ## Columns
 
