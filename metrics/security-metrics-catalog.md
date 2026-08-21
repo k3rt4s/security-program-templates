@@ -26,6 +26,22 @@ Coverage percentages improve when scope narrows. Patch latency improves when the
 
 The fix is cheap and almost nobody does it: publish the denominator next to the ratio, every time, and treat a change in the denominator as an event worth explaining. An MFA coverage figure that moved from 94 to 97 percent while the identity count fell by 1,200 is not an improvement, it is a question.
 
+## When the denominator comes from the thing being measured
+
+The fix above assumes the denominator is capable of being wrong. Where it is not, the metric fails in a way that publishing it cannot reach.
+
+An endpoint agent coverage figure taken from the endpoint agent console is 100 percent by construction. A machine with no agent does not appear in the console, so it is missing from the numerator and the denominator alike, and the ratio is arithmetically correct while answering a question nobody asked: of the machines running the agent, how many are running the agent. The shape repeats wherever a tool reports its own coverage. Patch compliance from the patch manager, which cannot see the host that never enrolled. MFA coverage from the identity provider, which cannot see the local account on the appliance. Backup success rate over the systems configured for backup.
+
+This is not the shrinking denominator described above, and it survives that section's remedy. A shrinking denominator was right and moved, which is why showing it works. A self-referential denominator was never right and never moves, so publishing it alongside the ratio changes nothing: both figures come from the same source, they agree because of that rather than despite it, and the agreement reads as corroboration.
+
+So a coverage claim needs its denominator from an authority independent of the thing being measured, and the authority is worth naming in the metric's definition rather than assumed. The way to get one is to differential the sources that should already agree: the directory, the tool's own console, the asset or configuration system, and the address space itself from lease records, network ranges, or cloud provider inventory. For anything scoped to people rather than machines, the HR record is the independent authority and it is usually the only one nobody argues with.
+
+Join any two and the disagreement is the finding. Assets in the directory with no agent reporting. Agents reporting from assets in no inventory, which is the more interesting direction and the one a coverage percentage can never surface. Addresses answering that no system claims. The count of machines the directory knows about and the console does not is a better metric than the coverage percentage it replaces, and it is what the program was trying to say all along.
+
+The repository already holds this move once, scoped narrowly. The [AI system register](../ai-governance/ai-system-register-pattern.md) runs four discovery channels rather than a survey and reports discovery coverage rather than row count, for exactly this reason: a register built from the systems that registered themselves is complete with respect to itself. The generalization is that the same reasoning applies wherever a number carries the word coverage. The [evidence readiness register](../incident-response/evidence-readiness-register.md) asks it of a log source in its coverage confidence column, where an agent that stopped reporting leaves a retention window that looks intact and is not.
+
+The cost is two exported inventories and a join, which is the lowest implementation bar on this page and the reason there is no good excuse for the console figure.
+
 ## Activity and effect
 
 Leading versus lagging is the usual split and it is less useful than activity versus effect.
@@ -98,6 +114,7 @@ Several entries above have a blind spot that another entry covers exactly. Publi
 | --------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | Third-party review SLA with tier reductions                     | Work performed against exposure removed                                               |
 | MFA coverage with the identity denominator                      | Whether coverage improved or the population shrank                                    |
+| Agent coverage with a directory-sourced device count            | Whether the console can see what it is not installed on                               |
 | Mean time to detect with detection coverage                     | Whether fast detection reflects capability or only counts what was already detectable |
 | Standing privileged accounts with just-in-time elevation volume | Whether privilege was removed or relocated                                            |
 | Phishing click rate with report rate                            | Whether people stopped clicking or only stopped engaging                              |
@@ -122,8 +139,9 @@ Retire it explicitly, say why, and keep the historical series. Quietly dropping 
 
 1. **Definition without decision.** The catalog entry is precise and nobody can name what changes at what threshold. That is a report.
 2. **Ratios without denominators.** The percentage improves because the scope shrank. Publish the denominator every time and explain its movement.
-3. **Activity only.** Everything on the dashboard counts work performed, so the program can be fully busy and fully ineffective without the numbers noticing.
-4. **Survivorship treated as performance.** Detection metrics computed over detected incidents, presented as a statement about detection.
-5. **Silent definition drift.** A definition tightens for a defensible reason mid-year and the series is compared across the change. Version the definitions and mark the break in the chart.
-6. **The composite score.** One number, no action, invites false comparison.
-7. **Immortal metrics.** Nothing is ever retired, the set grows, and the audience stops reading. Retire on a rule, keep the history, and never drop one quietly because it moved the wrong way.
+3. **A denominator from the same tool.** The coverage figure and the population it is measured against both come from the console, so the ratio is near perfect and means nothing. Source the denominator from an independent authority and report the disagreement between them.
+4. **Activity only.** Everything on the dashboard counts work performed, so the program can be fully busy and fully ineffective without the numbers noticing.
+5. **Survivorship treated as performance.** Detection metrics computed over detected incidents, presented as a statement about detection.
+6. **Silent definition drift.** A definition tightens for a defensible reason mid-year and the series is compared across the change. Version the definitions and mark the break in the chart.
+7. **The composite score.** One number, no action, invites false comparison.
+8. **Immortal metrics.** Nothing is ever retired, the set grows, and the audience stops reading. Retire on a rule, keep the history, and never drop one quietly because it moved the wrong way.
