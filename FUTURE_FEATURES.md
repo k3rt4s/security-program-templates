@@ -23,6 +23,16 @@ Topics that were put through the bar and did not ship. The reasoning is recorded
 
 Nothing sits here at present.
 
+## Ingested 2026-08-21, not yet assessed
+
+Raw candidates from public talk and summit digests. None of these has been put through the bar above; a session that wants one should assess it first and move it to Candidates or Assessed and held with reasoning.
+
+- Three-document IR hierarchy template + DFIR-IRIS-schema JSON case template (title_prefix, summary, tags, tasks[], note_directories[]); table-read as a documented review stage. Source: Infosec Age of AI Summit 2026, talk 8, digest_infosec_age_of_ai_summit_2026.md
+- Risk Reduction Frame / Cost Avoidance Frame language, $4.4M-$4.9M average breach cost, 200+ day containment. Source: Threat Hunting Summit 2026, Hartman 04:21:10, digest_threat_hunting_summit_2026.md
+- Anatomy-of-a-breach-response checklist (who to call, IR plan, ransom decision, insurance limits, pre-identified vendors) for an IR-plan template. Source: Threat Hunting Summit 2026, panel 04:59:50-05:03:20, digest_threat_hunting_summit_2026.md
+- "Capitol Hill CISO report" citation pattern for justifying new security initiatives to skeptical leadership. Source: Threat Hunting in the Agentic Age - Faan Rossouw, 01:02:10-01:03:00, digest_rossouw_agentic_threat_hunting.md
+- Feedback-loop-to-metrics document pattern - every hunt/incident outcome (true positive/false positive/inconclusive) logged with a "what did this teach us" field mapping to specific system improvements (missing detection, missing telemetry, over-tuned rule). Source: Threat Hunting in the Agentic Age - Faan Rossouw, 00:48:00-00:50:00, digest_rossouw_agentic_threat_hunting.md
+
 ## Notes on vintage
 
 The demand signals behind these candidates were gathered in August 2026 from published survey and practitioner reporting. Signals age. Anything still sitting in this file in a year should be re-checked against current reporting before it is written, rather than written on the strength of a note left here.
