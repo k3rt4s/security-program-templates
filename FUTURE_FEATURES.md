@@ -27,6 +27,7 @@ Nothing sits here at present.
 
 Raw candidates from public talk and summit digests. None of these has been put through the bar above; a session that wants one should assess it first and move it to Candidates or Assessed and held with reasoning.
 
+- Certified Information Security open assessment platform value check: use synthetic/sample data to compare its generated assessment expectations against this repository's security-program artifacts, especially the AI system register, control-framework mapping, evidence readiness register, risk register, and board update. Decide whether the comparison exposes an original document-shaped gap that clears this repo's bar. Do not copy or adapt CIS's proprietary methodology, mappings, scoring, prompts, or report format; record only independent artifact gaps and feasibility notes.
 - Three-document IR hierarchy template + DFIR-IRIS-schema JSON case template (title_prefix, summary, tags, tasks[], note_directories[]); table-read as a documented review stage. Source: Infosec Age of AI Summit 2026, talk 8, digest_infosec_age_of_ai_summit_2026.md
 - Risk Reduction Frame / Cost Avoidance Frame language, $4.4M-$4.9M average breach cost, 200+ day containment. Source: Threat Hunting Summit 2026, Hartman 04:21:10, digest_threat_hunting_summit_2026.md
 - Anatomy-of-a-breach-response checklist (who to call, IR plan, ransom decision, insurance limits, pre-identified vendors) for an IR-plan template. Source: Threat Hunting Summit 2026, panel 04:59:50-05:03:20, digest_threat_hunting_summit_2026.md
