@@ -63,7 +63,7 @@ Treat each crosswalk as a starting point, not as an output. The official crosswa
 The reason a mapping exists is to let one piece of evidence satisfy multiple frameworks. The mapping is valuable only to the extent that auditors accept the reused evidence. Two practices that hold up under audit:
 
 - **Tag the evidence to the source control, not to each target.** When the canonical source changes (rev 5 to rev 6, ISO 2022 to a future revision), only the source-to-target table changes; the evidence index does not.
-- **Maintain a per-target evidence index that walks through the mapping.** This index is what gets handed to an audit team. It says: target control X is satisfied by source controls A, B, C, which produce evidence items 1, 2, 3.
+- **Generate a per-target evidence index that walks through the mapping.** This view is what gets handed to an audit team. It says: target control X is satisfied by source controls A, B, C, which have current accepted evidence items 1, 2, 3. The acceptance decisions live once in the [control evidence acceptance register](control-evidence-acceptance-register.md); the target index is derived rather than maintained separately.
 
 ## Maintenance cadence
 
@@ -76,6 +76,7 @@ A control mapping is not a one-time artifact. The cadence:
 ## Where this connects
 
 - A control that a mapping claims as covered, but which a live [security exception](../risk-management/security-exception-record.md) waives for some part of the scope, is a mapping defect and an audit exposure. Reconcile the exception register against the mapping at the annual spot-audit, and treat any control named in an audit assertion or a customer commitment as ineligible for exception in the first place.
+- The [control evidence acceptance register](control-evidence-acceptance-register.md) records whether each item actually supports the source-control assertion for a stated scope and period. When evidence cannot be reused across a mapping marked Full, that is evidence the mapping or outward assertion is too generous, not a reason to copy the item into a target-specific spreadsheet.
 - Gaps found in step 3 above are remediation work, not risks. They belong on a remediation backlog. The risk is the consequence of the gap, written in the standard form on the [risk register](../risk-management/risk-register-pattern.md). Keeping these separate is the same discipline that keeps a register from filling with control gaps.
 - Where the evidence behind a control is a vendor's certification rather than something you operate, the mapping should say so explicitly and name the vendor. That one annotation is what turns a lapsed or rescoped vendor certification into a mapping defect you find on your own schedule rather than a surprise an auditor finds on theirs. The tiering that determines how closely that vendor is watched is in the [vendor tiering pattern](../third-party-risk/vendor-risk-tiering-pattern.md).
 - The [customer assurance package](../customer-assurance/assurance-package-pattern.md) generates its answers from this mapping and inherits its coverage qualifiers. An answer given to a customer that is more confident than the mapping behind it is a defect in the answer, and it is the route by which an unqualified "yes" becomes a contractual commitment.
@@ -87,5 +88,5 @@ A control mapping is not a one-time artifact. The cadence:
 1. **Spreadsheet sprawl.** Every team has its own mapping spreadsheet, slightly different from every other team's. Establish one canonical source and prohibit shadow copies.
 2. **Mapping as wish.** Rows marked "Full" because the team wishes the source covered the target. Coverage qualifiers must be honest; auditors will read the notes.
 3. **No remainder.** A row that does not document what is *not* covered hides risk. Even fully-mapped controls have edge cases worth noting.
-4. **Evidence orphaned from the mapping.** The mapping exists, the evidence exists, but no one can show which evidence backs which target control. Build the per-target evidence index from day one.
+4. **Evidence orphaned from the mapping.** The mapping exists, the evidence exists, but no one can show which accepted evidence backs which target control. Record acceptance against the canonical source and derive the per-target evidence index from day one.
 5. **One-shot project.** Mapping treated as a project that delivers and ends. Without an owner and a cadence, the mapping is a snapshot of a single moment, increasingly wrong over time.

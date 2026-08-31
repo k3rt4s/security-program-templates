@@ -141,6 +141,8 @@ The register is the precondition for all of them rather than a deliverable under
 
 Build the register first and map afterward. Building the register to satisfy a specific framework produces a register shaped like that framework's evidence request, which is the pattern described in the [control mapping](../compliance/control-framework-mapping-pattern.md) document and it fails the same way here.
 
+A register row is also not proof that the recorded control operated. When a row, shutdown drill, oversight sample, or discovery reconciliation supports an assurance claim, the [control evidence acceptance register](../compliance/control-evidence-acceptance-register.md) records the precise assertion, scope, period, and validation result. That keeps one successful drill from becoming evidence about the whole agentic population.
+
 ## Common failure modes
 
 1. **Registering models instead of use cases.** The row says "commercial LLM, approved". It governs nothing, because the exposure lives in what the system is pointed at and what it can change.

@@ -88,6 +88,7 @@ A board does not want a tour of every project. Show the shape, name the headwind
 A short status of regulatory and audit obligations:
 
 - Open audit findings and aging.
+- Control assertions blocked by missing, partial, rejected, or expired evidence, limited to externally relied-upon claims.
 - Compliance certifications status (in-scope frameworks, renewal dates).
 - Regulatory engagements active this quarter.
 - Material policy or framework changes since last meeting.
@@ -139,18 +140,18 @@ Reference the appendix when a director asks for detail. Do not lead with it.
 
 This deck should be a view over artifacts the program already maintains, not a document written from scratch each quarter. Where each section comes from:
 
-| Section                                   | Source artifact                                                                                                                                                                               |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Top three risks, and movement             | [Risk register](../risk-management/risk-register-pattern.md), sorted by residual score with the prior quarter's score alongside                                                               |
-| Significant incidents                     | [Postmortems](../incident-response/blameless-postmortem-template.md) closed in the quarter, plus their [materiality determinations](../incident-response/materiality-determination-record.md) |
-| AI governance                             | [AI system register](../ai-governance/ai-system-register-pattern.md): discovery coverage, agentic count, drill results                                                                        |
-| Compliance and audit posture              | [Control mapping](../compliance/control-framework-mapping-pattern.md) and the audit finding backlog                                                                                           |
-| Third-party posture                       | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md): critical-tier count, review SLA, tier reductions achieved, and concentration across the critical tier                   |
-| Response readiness                        | [Tabletop exercises](../incident-response/tabletop-exercise-pattern.md) run this year: scenario families covered, executive participation, and findings still open                            |
-| The indicator set itself                  | [Security metrics catalog](../metrics/security-metrics-catalog.md), selecting six to ten and carrying each one's denominator                                                                  |
-| What crown-jewel coverage counts against  | [Crown jewel inventory](../assets/crown-jewel-inventory-pattern.md), whose size is the denominator behind that indicator                                                                      |
-| Remediation posture                       | [Exposure prioritization](../vulnerability-management/exposure-prioritization-pattern.md): finding arrival against closure, reported as a pair, and classes eliminated                        |
-| Aged exceptions, and the asks behind them | [Exception register](../risk-management/security-exception-record.md), filtered to executive tier and to anything past a second renewal                                                       |
+| Section                                   | Source artifact                                                                                                                                                                                     |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Top three risks, and movement             | [Risk register](../risk-management/risk-register-pattern.md), sorted by residual score with the prior quarter's score alongside                                                                     |
+| Significant incidents                     | [Postmortems](../incident-response/blameless-postmortem-template.md) closed in the quarter, plus their [materiality determinations](../incident-response/materiality-determination-record.md)       |
+| AI governance                             | [AI system register](../ai-governance/ai-system-register-pattern.md): discovery coverage, agentic count, drill results                                                                              |
+| Compliance and audit posture              | [Control mapping](../compliance/control-framework-mapping-pattern.md), [control evidence acceptance register](../compliance/control-evidence-acceptance-register.md), and the audit finding backlog |
+| Third-party posture                       | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md): critical-tier count, review SLA, tier reductions achieved, and concentration across the critical tier                         |
+| Response readiness                        | [Tabletop exercises](../incident-response/tabletop-exercise-pattern.md) run this year: scenario families covered, executive participation, and findings still open                                  |
+| The indicator set itself                  | [Security metrics catalog](../metrics/security-metrics-catalog.md), selecting six to ten and carrying each one's denominator                                                                        |
+| What crown-jewel coverage counts against  | [Crown jewel inventory](../assets/crown-jewel-inventory-pattern.md), whose size is the denominator behind that indicator                                                                            |
+| Remediation posture                       | [Exposure prioritization](../vulnerability-management/exposure-prioritization-pattern.md): finding arrival against closure, reported as a pair, and classes eliminated                              |
+| Aged exceptions, and the asks behind them | [Exception register](../risk-management/security-exception-record.md), filtered to executive tier and to anything past a second renewal                                                             |
 
 If assembling the deck requires original research rather than a query across those artifacts, the deck is not the problem. The underlying instruments are not being maintained at the cadence the board's questions assume, and the quarterly scramble is the symptom.
 

@@ -30,15 +30,15 @@ The structural fix, and it changes who does the work.
 
 Answers written by the team under deal pressure drift toward yes. Answers generated from artifacts the program already maintains cannot, because the artifact is the constraint.
 
-| Question class                                 | Source artifact                                                                                                                                                                                          |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Which frameworks, which scope, what evidence   | [Control mapping](../compliance/control-framework-mapping-pattern.md), including the coverage qualifiers                                                                                                 |
-| Whether a specific control is in place         | Control mapping, honestly qualified, not a yes                                                                                                                                                           |
-| Incident response and notification commitments | [Regulatory applicability register](../compliance/regulatory-applicability-register.md) contractual rows, and the [materiality record](../incident-response/materiality-determination-record.md) process |
-| Access control and review practice             | [Access review pattern](../identity/access-review-pattern.md), including what is out of scope                                                                                                            |
-| Subprocessors and fourth parties               | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md)                                                                                                                                     |
-| AI use and data handling                       | [AI system register](../ai-governance/ai-system-register-pattern.md)                                                                                                                                     |
-| Resilience and recovery commitments            | [Crown jewel inventory](../assets/crown-jewel-inventory-pattern.md), including tested recovery times                                                                                                     |
+| Question class                                 | Source artifact                                                                                                                                                                                                 |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Which frameworks, which scope, what evidence   | [Control mapping](../compliance/control-framework-mapping-pattern.md), including the coverage qualifiers, and the [control evidence acceptance register](../compliance/control-evidence-acceptance-register.md) |
+| Whether a specific control is in place         | Control mapping plus current accepted evidence for the asserted scope and period, honestly qualified, not a yes                                                                                                 |
+| Incident response and notification commitments | [Regulatory applicability register](../compliance/regulatory-applicability-register.md) contractual rows, and the [materiality record](../incident-response/materiality-determination-record.md) process        |
+| Access control and review practice             | [Access review pattern](../identity/access-review-pattern.md), including what is out of scope                                                                                                                   |
+| Subprocessors and fourth parties               | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md)                                                                                                                                            |
+| AI use and data handling                       | [AI system register](../ai-governance/ai-system-register-pattern.md)                                                                                                                                            |
+| Resilience and recovery commitments            | [Crown jewel inventory](../assets/crown-jewel-inventory-pattern.md), including tested recovery times                                                                                                            |
 
 Where a question has no source artifact, that is the finding. It means the organization is about to commit in writing to something it does not track internally, and the correct response is to build the tracking or decline the commitment, not to answer from memory.
 
@@ -74,6 +74,7 @@ That third trigger is the one that gets missed, and it is the reason this docume
 - Controls claimed here are not available for exception. See [exception record](../risk-management/security-exception-record.md), which routes those to counsel.
 - Voluntary and contractual commitments made here are rows in the [regulatory applicability register](../compliance/regulatory-applicability-register.md). That register is what makes the non-exceptable list knowable rather than remembered.
 - Answers derive from the [control mapping](../compliance/control-framework-mapping-pattern.md) and inherit its coverage qualifiers. An answer more confident than its mapping is a defect in the answer.
+- The [control evidence acceptance register](../compliance/control-evidence-acceptance-register.md) decides whether the evidence behind that mapping is sufficient and current for the asserted scope and period. Received, Pending, Partial, and Expired do not support an unqualified yes.
 - Time spent on questionnaires, and deflection rate from the public tier, are candidate indicators for the [metrics catalog](../metrics/security-metrics-catalog.md), with the caveat that deflection rate is gamed by narrowing what counts as a questionnaire.
 - Authority to approve a non-standard answer is a row in the [decision rights register](../governance/decision-rights-register.md).
 

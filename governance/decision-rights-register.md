@@ -77,25 +77,26 @@ A decision with no row is not a gap in the register. It is a gap in the organiza
 
 The decisions the rest of this repository already implies, with the document that defines each one. A program that fills only these has a working register.
 
-| Decision                                           | Criteria source                                                                              |
-| -------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Accept a risk, at each residual-score tier         | [Risk register](../risk-management/risk-register-pattern.md)                                 |
-| Approve a security exception, at each tier         | [Exception record](../risk-management/security-exception-record.md)                          |
-| Convene the disclosure committee                   | [Materiality determination record](../incident-response/materiality-determination-record.md) |
-| Determine that an incident is material             | [Materiality determination record](../incident-response/materiality-determination-record.md) |
-| Declare an incident and set its severity           | [Postmortem](../incident-response/blameless-postmortem-template.md)                          |
-| Trigger evidence preservation across named sources | [Evidence readiness register](../incident-response/evidence-readiness-register.md)           |
-| Attach a legal hold                                | [Evidence readiness register](../incident-response/evidence-readiness-register.md)           |
-| Engage outside counsel on an incident              | [Evidence readiness register](../incident-response/evidence-readiness-register.md)           |
-| Take a revenue-generating product offline          | [Tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md)               |
-| Authorize a ransom payment                         | [Tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md)               |
-| Notify a regulator, per obligation                 | [Regulatory applicability register](../compliance/regulatory-applicability-register.md)      |
-| Approve a new agentic AI use case                  | [AI system register](../ai-governance/ai-system-register-pattern.md)                         |
-| Stop a running AI system                           | [AI system register](../ai-governance/ai-system-register-pattern.md)                         |
-| Onboard a vendor that failed its tier's assessment | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md)                         |
-| Revoke a vendor's production credential            | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md)                         |
-| Override an access review's revoke finding         | [Access review](../identity/access-review-pattern.md)                                        |
-| Disable an unowned non-human identity              | [Access review](../identity/access-review-pattern.md)                                        |
+| Decision                                                 | Criteria source                                                                               |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Accept a risk, at each residual-score tier               | [Risk register](../risk-management/risk-register-pattern.md)                                  |
+| Approve a security exception, at each tier               | [Exception record](../risk-management/security-exception-record.md)                           |
+| Convene the disclosure committee                         | [Materiality determination record](../incident-response/materiality-determination-record.md)  |
+| Determine that an incident is material                   | [Materiality determination record](../incident-response/materiality-determination-record.md)  |
+| Declare an incident and set its severity                 | [Postmortem](../incident-response/blameless-postmortem-template.md)                           |
+| Trigger evidence preservation across named sources       | [Evidence readiness register](../incident-response/evidence-readiness-register.md)            |
+| Attach a legal hold                                      | [Evidence readiness register](../incident-response/evidence-readiness-register.md)            |
+| Engage outside counsel on an incident                    | [Evidence readiness register](../incident-response/evidence-readiness-register.md)            |
+| Take a revenue-generating product offline                | [Tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md)                |
+| Authorize a ransom payment                               | [Tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md)                |
+| Notify a regulator, per obligation                       | [Regulatory applicability register](../compliance/regulatory-applicability-register.md)       |
+| Accept evidence supporting an external control assertion | [Control evidence acceptance register](../compliance/control-evidence-acceptance-register.md) |
+| Approve a new agentic AI use case                        | [AI system register](../ai-governance/ai-system-register-pattern.md)                          |
+| Stop a running AI system                                 | [AI system register](../ai-governance/ai-system-register-pattern.md)                          |
+| Onboard a vendor that failed its tier's assessment       | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md)                          |
+| Revoke a vendor's production credential                  | [Vendor tiering](../third-party-risk/vendor-risk-tiering-pattern.md)                          |
+| Override an access review's revoke finding               | [Access review](../identity/access-review-pattern.md)                                         |
+| Disable an unowned non-human identity                    | [Access review](../identity/access-review-pattern.md)                                         |
 
 Two of these are worth noticing. Revoking a vendor's production credential and stopping a running AI system are both authorities that programs discover they have not assigned, usually while needing to exercise them, and both appear in this set only because two other documents independently reported finding them missing.
 
