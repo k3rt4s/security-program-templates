@@ -14,7 +14,7 @@ Markdown only. No code. The line above names a representative few; the full set 
 - [compliance/](compliance/README.md): Patterns for mapping controls across frameworks, accepting evidence for stated assertions, and registering the obligations that actually bind an organization.
 - [customer-assurance/](customer-assurance/README.md): Patterns for the security material given to prospective customers, treating every answer as a binding commitment that constrains the exception process rather than as a sales statement.
 - [governance/](governance/README.md): Patterns for recording who holds each decision a security program depends on, separating the criteria for a decision from the assignment of it.
-- [identity/](identity/README.md): Patterns for access review and entitlement certification, covering who can actually judge an entitlement and why revocation rather than decision is the deliverable.
+- [identity/](identity/README.md): Patterns for the identity records a program produces, covering access review and entitlement certification and the response to a confirmed credential or session compromise.
 - [incident-response/](incident-response/README.md): Templates for blameless incident postmortems, tabletop design and after-action, the standing record of what an incident could be reconstructed from, and the materiality determination record.
 - [metrics/](metrics/README.md): Patterns for choosing security metrics that change decisions, with each metric's gaming mode and blind spot recorded alongside its definition.
 - [risk-management/](risk-management/README.md): Patterns for an enterprise risk register and the security exception record, covering risk statement format, a likelihood and impact rubric anchored to time and money, and the bar for an Accept.
