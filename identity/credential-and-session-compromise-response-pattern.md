@@ -60,14 +60,16 @@ The order is the content, in the same sense it is for the [evidence-readiness re
 
 ## The response record
 
+The shape, with a worked example. Identity, owner, exposure ID and date are placeholders; the three clock times are kept ordered on purpose, because the order is the point: session revocation, then MFA re-enrollment, then password rotation.
+
 ```text
-Exposure ID:         CS-2026-0143
+Exposure ID:         <exposure-id>
 Identity:            <name>
 Trigger:             Stealer-log notification, corporate domain match
-Detected:            2026-03-11
-Session revocation:  2026-03-11 14:02 (all applications)
-MFA re-enrollment:   2026-03-11 14:20 (hardware key, in person)
-Password rotation:   2026-03-11 15:10
+Detected:            <date>
+Session revocation:  <date> 14:02 (all applications)
+MFA re-enrollment:   <date> 14:20 (hardware key, in person)
+Password rotation:   <date> 15:10
 Host disposition:    Personal device, reimage not enforceable
 Presumed population: All saved credentials, cookies, and browser-extension
                       secrets on the host as of infection date
