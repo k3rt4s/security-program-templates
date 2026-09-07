@@ -123,6 +123,10 @@ Restate the asks from the executive summary, with the context needed to decide. 
 - The cost of doing nothing.
 - What changes if the decision waits a quarter.
 
+Treat a cost-of-doing-nothing figure as a claim about this organization's loss distribution. An industry average describes a population in which this organization is one unweighted member, mostly organizations with different revenue, data, and regulatory surface. It is not useless, but it is not the cost of doing nothing: where no loss history exists, use it only to bound an order of magnitude and label it that way in the sentence that carries it.
+
+Use the organization's own small figures instead: postmortem-set incidents with measured detection and containment intervals, exceptions past a second renewal from the exception record, and tolerable-outage figures in the crown-jewel inventory. A borrowed population figure and a self-referential denominator fail the same way: both look like evidence, both survive publishing their source, and both describe the wrong population.
+
 If a board ends a meeting without any decisions being asked of them, they often feel they were given a status update rather than engaged in governance. Three good asks per quarter, with real options, is a healthy cadence.
 
 ## Backup material
@@ -162,3 +166,4 @@ If assembling the deck requires original research rather than a query across tho
 3. **Surprise incidents.** A material incident appears for the first time on the board deck. Brief committee chairs by phone the week the incident closes; the board meeting is not a discovery channel.
 4. **Color-without-criteria.** A red indicator with no threshold definition is a feeling, not a signal. Tie every color to a published threshold.
 5. **Reused decks.** The same slides quarter over quarter with minor updates train directors to skim. Refresh the structure annually, even if the underlying program is stable.
+6. **Borrowed loss figure.** An industry average is presented as this organization's cost of doing nothing. It describes a different population; use it only as a labelled order-of-magnitude bound when the organization has no loss history, and use the organization's own incident, exception, and tolerable-outage figures for the claim.
