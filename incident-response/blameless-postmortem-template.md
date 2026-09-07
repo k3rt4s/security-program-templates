@@ -109,6 +109,18 @@ Three short subsections.
 - **Containment.** How long from detection to containment? What slowed it down? Were the containment actions reversible if we had been wrong about scope?
 - **Communication.** Internal communication latency, external communication latency, accuracy of early messages, post-event corrections.
 
+## What the detection system got wrong
+
+A lessons-learned field without a named system change is decoration. Record each fault below: the three types have different owners and fixes, so separating them prevents repeated vague "improve detection" action items.
+
+| Fault type            | Incident finding                                                                                                                                  | Destination / required record                                                                                      |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Missing telemetry     | No egress logging on the affected subnet, so the exfiltration question is Unknown rather than Ruled out.                                          | [Evidence readiness register](evidence-readiness-register.md): `EV-xx` Coverage confidence downgraded.             |
+| Present but unalerted | Initial credential stuffing against the same account three days earlier was in authentication logs; no rule covered repeat failures from one ASN. | `AI-02` detective-control action item, tracked as `SOC-4881`.                                                      |
+| Alerted and tuned out | `<what fired, and how it was suppressed, deprioritized, or closed>`                                                                               | `AI-xx` detective-control action item, its backlog record, and the tuning decision that caused it and who made it. |
+
+Missing telemetry is the route by which an incident blind spot reaches the evidence readiness register; downgrade Coverage confidence when the source already exists, rather than creating a duplicate row.
+
 ## Action items
 
 A short, tracked list. Each item has an owner, a category, a due date, and a tracking ID in the engineering backlog. Categories help future-you see whether the program is investing in the right places over time.
@@ -139,6 +151,7 @@ A short list of terms used in the postmortem that an executive distribution may 
 - The [materiality determination record](materiality-determination-record.md) runs in parallel on a different clock, with a different owner and a different question. The postmortem asks why this happened and what we change; the determination asks whether a reasonable investor would consider it important. Do not merge them. The postmortem may be cited by the determination as a source of facts, and it must not be the vehicle for the determination.
 - The realized risk is a row on the [risk register](../risk-management/risk-register-pattern.md). Name it. If there is no such row, that is a finding worth stating: the risk was never enumerated, and the register's coverage is the thing to fix.
 - Any active [exception](../risk-management/security-exception-record.md) over the failure path is named in the header and analysed in the causes section.
+- A [missing-telemetry fault](evidence-readiness-register.md) is recorded as an evidence-readiness-register row or a Coverage confidence downgrade, so the incident blind spot has an owner outside this postmortem.
 - Material incidents, their detection paths, and the status of their action items appear in section 3 of the [quarterly board update](../board-reporting/quarterly-security-update-template.md). Brief the committee chair when the incident closes, not when the deck is assembled.
 - Action items of the "exercise this within 60 days" kind, like AI-03 above, land in the [tabletop exercise pattern](tabletop-exercise-pattern.md). That document deliberately reuses this action-item format, so exercise findings and incident findings enter one backlog on equal footing, which matters because findings from an event that did not really happen are the first to be deprioritized.
 
@@ -149,3 +162,4 @@ A short list of terms used in the postmortem that an executive distribution may 
 3. **Action items without owners and dates.** These never ship. Every item has both, before the document is signed off.
 4. **Re-litigating decisions.** "We should have done Y instead of X." Frame as "in retrospect, the decision criteria did not include Z; future runbooks should require Z." Decisions made with the information available at the time are not on trial.
 5. **Closing the loop quietly.** Action items shipping six months later, with no broader announcement, lets the institutional muscle memory of the incident fade. Brief the closure at the next program review.
+6. **"Improve detection" without a fault type.** Name whether telemetry was missing, present but unalerted, or alerted and tuned out, then record the distinct system change and destination that follows.
