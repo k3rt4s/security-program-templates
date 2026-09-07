@@ -56,6 +56,16 @@ The point of tiering is that the work is proportionate. Publish this table, beca
 
 The last column matters more than the cadence column. A calendar review is a snapshot of a vendor that keeps changing between snapshots, and the changes that matter arrive on their own schedule: the vendor is breached, is acquired, changes its subprocessors, loses a certification, or quietly adds an AI subprocessor in a data-processing amendment that arrives as an email nobody reads. Trigger-based reassessment catches those; annual review catches them up to twelve months late. Build the trigger list first and treat the cadence as the backstop.
 
+## Carrier panels are critical vendors chosen elsewhere
+
+A cyber policy commonly restricts which forensics, counsel and notification vendors may be engaged if the cost is to be covered.
+That approved panel is a set of pre-selected responders the organization did not tier, did not assess, and may discover only after the incident has already started.
+Engaging the responder the organization would have chosen on its own can void coverage for that engagement, which makes the decision an assigned authority rather than a procurement preference.
+
+Treat the panel as critical-tier third parties chosen by someone else.
+The organization does not control the contract terms, the spend limit or the approved-responder list, but all three bind the response at the worst possible moment to be discovering an unassessed dependency.
+Questions about coverage belong to the organization's own broker and counsel; this artifact records the vendor and decision-rights exposure, not the legal answer.
+
 ## What a questionnaire establishes, and what it does not
 
 Reliance on questionnaires is near-universal and confidence that they reflect reality is not. Both facts are true at once and neither means the questionnaire is worthless. It means it is being asked to do a job it cannot do.
@@ -103,6 +113,7 @@ Third-party accounts also fall inside the scope of the recurring campaign in the
 - Third-party review SLA and the count of Tier 4 vendors are already indicators in the [quarterly board update](../board-reporting/quarterly-security-update-template.md). The more useful number to add is how many vendors moved down a tier through an access change.
 - Where a vendor's certification is the evidence behind a control you claim, the [control mapping](../compliance/control-framework-mapping-pattern.md) should say so, so that a lapsed vendor certification surfaces as a mapping defect rather than as a surprise during an audit.
 - Run the third-party scenario family in the [tabletop exercise pattern](../incident-response/tabletop-exercise-pattern.md) against a Tier 4 vendor. It finds two things reliably and cheaply: the vendor contact list is stale, and nobody in the room holds the authority to revoke a live production credential belonging to a vendor. Both are properties of the relationship rather than of the vendor, which means both are yours to fix. That second one is a missing row in the [decision rights register](../governance/decision-rights-register.md), and it can be found there by inspection rather than waiting for an exercise to surface it.
+- A carrier-approved responder panel creates a contractual duty in the [regulatory applicability register](../compliance/regulatory-applicability-register.md), because the policy's notice and engagement conditions bind the incident even though the vendors were selected outside the third-party program.
 
 ## Common failure modes
 
@@ -114,3 +125,4 @@ Third-party accounts also fall inside the scope of the recurring campaign in the
 6. **Assessment mistaken for reduction.** The program reports assessments completed. Nothing about the exposure changed. Count tier reductions achieved through access changes.
 7. **No technical offboarding.** The contract ended, the credential did not. Sample terminated vendors against the identity provider annually.
 8. **Concentration invisible.** Every vendor row is individually acceptable and six of them share one region. Read the rows together and put the result on the risk register.
+9. **Carrier panel discovered during the incident.** The first time anyone reads the approved-responder list is after the claim-triggering event, and the organization learns under pressure that its chosen responders were never the vendors the policy would fund.

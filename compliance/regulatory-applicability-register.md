@@ -23,6 +23,9 @@ Programs track the first source diligently, the second unevenly, and the third a
 **Statutory and regulatory.** The obvious source. Sector regulators, data protection regimes, securities disclosure, critical infrastructure rules.
 
 **Contractual.** Customer agreements, data processing agreements, and partner contracts routinely impose notification duties measured in hours, considerably tighter than any statute. These arrive through procurement and legal rather than through compliance, so they are frequently absent from the compliance register while being fully enforceable. Register them from the actual executed agreements of the largest customers by revenue, not from the standard template, because the negotiated ones are the tight ones.
+Cyber insurance policies belong in the same source category.
+The policy is a contract with notification duties: it can require notice of a claim-triggering event within a stated window, commonly measured in days, and that window is often shorter than any statutory one.
+Coverage questions belong to the organization's own broker and counsel, but the duty to notify is still a row in this register.
 
 **Voluntary and self-imposed.** Certifications you hold, public claims on a trust page, answers given in completed customer security questionnaires, and commitments made in a sales cycle. These have no regulator behind them, which is exactly why they get missed, and the consequence of breaching one is a misrepresentation claim rather than a fine. This category also determines what is not available for exception, which is the connection the [exception record](../risk-management/security-exception-record.md) already names: an exception that makes an existing public statement untrue is a legal question rather than a risk question.
 
@@ -79,6 +82,7 @@ Produce one derived view from this register and keep it where the incident proce
 Notification clocks, tightest first
   24h   Contractual, top-10 customers by revenue, per executed DPA        Owner: <name>
   24h   Sector regulator early warning, where designated                  Owner: <name>
+  Days  Cyber insurance carrier notice, per policy conditions             Owner: <name>
   72h   Data protection authority, personal data breach                   Owner: <name>
   4 bd  Securities disclosure, after a materiality determination          Owner: <name>
   30d   State breach notification, varies by state and resident count     Owner: <name>
@@ -114,3 +118,4 @@ Each watchlist entry carries the expected application date, the applicability ba
 6. **Annual review cadence.** Applicability changes when the business changes. Attach re-derivation to business events and tell the people who make those decisions that they are the trigger.
 7. **Horizon items mixed into the register.** The register fills with things that do not yet apply, and people stop reading it.
 8. **No clock inventory.** The register exists, is correct, and is not reachable in the first hour of an incident, which is the only hour it was built for.
+9. **Policy filed as finance paperwork.** A cyber insurance policy sits with the renewal packet, so its carrier-notice duty never reaches the register that incident responders actually use.
