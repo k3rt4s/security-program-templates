@@ -32,6 +32,16 @@ Notice how few of these belong to the security team. That is the finding most ex
 
 Each of these should already have a named holder and a named delegate in the [decision rights register](../governance/decision-rights-register.md). Where one does not, you have found the gap before designing the scenario, which is cheaper. Where one does, the exercise is testing something better than whether the authority exists: whether the holder knew they held it, was reachable, and used it.
 
+## The table read comes first
+
+Before the exercise, run a table read: the same decision owners read the procedure aloud against a scenario, in sequence, each person reading their own steps. There is no clock and no injects. It costs an hour and requires no preparation beyond the document. The author does not read it, because the author reads past the gap.
+
+A table read finds defects that document review misses: a step naming a tool nobody can access, a step assigned to a role that no longer exists, two people who each believe the other performs a step, or an impossible ordering. Reading the sequence aloud makes those defects visible; reviewers silently repair sequence as they read.
+
+It does not find whether anyone decides under time pressure. The table read removes the clock that the exercise applies. A table read is not a cheap exercise but a different instrument, and substituting one for the other is the failure mode.
+
+A tabletop against a procedure never read aloud spends its expensive hour finding defects an hour of reading would have found for free. Table read first, exercise second. Fix a procedure that fails the table read before scheduling the exercise, rather than during it. Table-read findings enter the same action-item format as everything else and compete in one backlog.
+
 ## Injects target decisions, not technical steps
 
 The technical response is usually the part an organization is best at, because it is the part that gets practiced incidentally every time something breaks. Writing injects about which log to check produces an exercise where the responders perform well and nothing is learned.
@@ -147,3 +157,4 @@ Cap the list. An exercise producing twenty findings has produced a list nobody w
 6. **No gaps written in the room.** The hot wash produces good discussion and no document. Reserve the last block for writing, before anyone leaves.
 7. **Findings that go nowhere.** Items without an owner, a date, and a backlog ID. Findings from a simulated event are the first to be deprioritized, so they need the same tracking discipline as incident findings, not less.
 8. **The same exercise annually.** One scenario family, repeated, trains one muscle and produces steadily improving results that mean nothing. Rotate.
+9. **Table read treated as the exercise.** Reading aloud finds broken sequence and ownership; only the exercise tests whether decision owners decide under the clock.
