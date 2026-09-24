@@ -102,6 +102,8 @@ Their provenance differs, and it is worth being straight about which is which. M
 
 Three are not, and they are named rather than left for the reader to work out. The **AI system register** and the **materiality determination record** describe practices that are still forming: the disclosure obligation the second answers to is recent, and almost nobody has a decade of watching an AI inventory succeed or fail. The **decision rights register** rests on an old idea, but it is rarely maintained as a standalone artifact, so its specific shape here is a proposal rather than a description of common practice. All three are reasoned from current practice, current regulatory expectations, and the failure patterns visible so far. Read them as a considered starting position, and expect them to age faster than the rest.
 
+This is a public repo, so its work board is never committed here; it lives at `C:\Code_data\security-program-templates\WORK_BOARD.md`.
+
 ## License
 
 CC BY 4.0. Use, adapt, redistribute. Attribution required. See `LICENSE`.
