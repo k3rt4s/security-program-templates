@@ -7,3 +7,6 @@ Thumbs.db
 # Local-only adaptations of these templates kept under a private notes folder
 private/
 local/
+# The board lives at C:\Code_data\security-program-templates\WORK_BOARD.md, never in this
+# public repo (workspace-rules.md, "Project board location").
+**/WORK_BOARD.md
